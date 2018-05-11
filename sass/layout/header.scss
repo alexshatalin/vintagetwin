@@ -1,0 +1,59 @@
+$desktop_header_height: 14em;
+
+.main_header {
+	height: $desktop_header_height;
+
+	&__promo_bar {
+		padding: 0.9em 0;
+		background: black;
+		color: white;
+		font-size: 1.4em;
+		font-weight: 300;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 0.3em;
+
+		span {
+			color: $promo_highlight;
+		}
+	}
+
+	&__menu_button {
+
+	}
+
+	&__logo {
+		margin: 3.7em 0 0;
+		width: 28.8em;
+		float: left;
+	}
+
+	&__nav {
+		float: left;
+
+		ul {
+			margin: 4em 7em 0;
+			padding: 0;
+			list-style-type: none;
+		}
+
+		li {
+			margin: 0 1em;
+			display: inline-block;
+			text-transform: uppercase;
+			color: black;
+			font-size: 1.4em;
+			font-family: 'Larsseit';
+			font-weight: 500;
+			letter-spacing: 0.25em;
+		}
+
+		.submenu {
+			display: none;
+		}
+	}
+
+	&__secondary_nav {
+		float: right;
+	}
+}

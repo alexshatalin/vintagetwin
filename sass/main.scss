@@ -1,0 +1,32 @@
+/*
+Description: Menu Redesign
+Version: 1.00
+*/
+
+
+//sass --watch sass/main.scss:style.css --style compressed expanded
+@import "base/functions_global";
+@import "font_awesome/fontawesome";
+@import "base/colors";
+@import "helpers/mixins";
+@import "helpers/placeholders";
+@import "base/typography";
+@import "base/reset";
+@import "base/dev";
+@import "base/container_settings";
+
+
+//@import "components/buttons";
+//@import "components/moible_menu";
+//@import "components/page_settings_global";
+//@import "components/search_container";
+//@import "components/mega_menu";
+
+
+
+@import "layout/header";
+
+
+
+
+
