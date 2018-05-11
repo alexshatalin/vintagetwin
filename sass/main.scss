@@ -7,6 +7,9 @@ Version: 1.00
 //sass --watch sass/main.scss:style.css --style compressed expanded
 @import "base/functions_global";
 @import "font_awesome/fontawesome";
+@import "font_awesome/fa-brands";
+@import "font_awesome/fa-regular";
+@import "font_awesome/fa-solid";
 @import "base/colors";
 @import "helpers/mixins";
 @import "helpers/placeholders";
@@ -25,7 +28,7 @@ Version: 1.00
 
 
 @import "layout/header";
-
+@import "layout/page_settings";
 
 
 

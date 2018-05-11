@@ -1,13 +1,25 @@
 $desktop_header_height: 14em;
 
 .main_header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	background: rgba(255,255,255,0.8);
 	height: $desktop_header_height;
+	width: 100%;
+	font-family: 'Larsseit';
+	font-weight: 500;
+
+	ul {
+		list-style-type: none;
+	}
 
 	&__promo_bar {
-		padding: 0.9em 0;
+		padding: 0.8em 0;
 		background: black;
 		color: white;
-		font-size: 1.4em;
+		font-size: 1.45em;
 		font-weight: 300;
 		text-align: center;
 		text-transform: uppercase;
@@ -23,7 +35,7 @@ $desktop_header_height: 14em;
 	}
 
 	&__logo {
-		margin: 3.7em 0 0;
+		margin: 3.6em 0 0;
 		width: 28.8em;
 		float: left;
 	}
@@ -32,19 +44,16 @@ $desktop_header_height: 14em;
 		float: left;
 
 		ul {
-			margin: 4em 7em 0;
+			margin: 3.9em 7em 0;
 			padding: 0;
-			list-style-type: none;
 		}
 
 		li {
-			margin: 0 1em;
+			margin: 0 1.03em;
 			display: inline-block;
 			text-transform: uppercase;
 			color: black;
 			font-size: 1.4em;
-			font-family: 'Larsseit';
-			font-weight: 500;
 			letter-spacing: 0.25em;
 		}
 
@@ -55,5 +64,29 @@ $desktop_header_height: 14em;
 
 	&__secondary_nav {
 		float: right;
+		
+		ul {
+			margin: 3.7em 0 0;
+			padding: 0;
+		}
+
+		li {
+			margin: 0 0 0 0.73em;
+			display: inline-block;
+			vertical-align: middle;
+			text-transform: uppercase;
+			color: black;
+			font-size: 1.4em;
+			letter-spacing: 0.25em;
+
+			&:first-of-type {
+				margin: 0;
+			}
+		}
+
+		.fas, .far {
+			font-size: 1.5em;
+			cursor: pointer;
+		}
 	}
 }

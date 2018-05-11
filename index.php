@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="__dev__"></div>
-	<div class="page_container">
+	<section class="page_container">
 		<header class="main_header">
 			<div class="main_header__promo_bar"><span>50% sale.</span>just today</div>
 			<div class="container">
@@ -36,16 +36,20 @@
 						</div>
 						<div class="main_header__secondary_nav">
 							<ul>
-								<li class="search"></li>
+								<li><i class="fas fa-search"></i></li>
 								<li class="account">account</li>
-								<li class="wishlist"></li>
-								<li class="cart"></li>
+								<li><i class="far fa-heart"></i></li>
+								<li class="cart"><i class="fas fa-shopping-bag"></i></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</header>
-	</div>
+		<section class="page_content">
+			<main><img src="dev/temp_home_d.jpg"></main>
+		</section>
+		<footer></footer>
+	</section>
 </body>
 </html>
