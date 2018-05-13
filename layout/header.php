@@ -11,9 +11,28 @@
 					<ul>
 						<li class="active"><a href="#">clothing</a>
 							<ul class="submenu">
-								<li data-id="unisex">unisex</li>
-								<li data-id="more">more</li>
-								<li data-id="trending">trending</li>
+								<li>
+									<dl>
+										<dt>unisex</dt>
+										<dd><a href="#">t-shirts</a></dd>
+										<dd><a href="#">sweatshirts</a></dd>
+										<dd><a href="#">button downs</a></dd>
+										<dd><a href="#">sweaters</a></dd>
+										<dd><a href="#">jackets + coats</a></dd>
+										<dd><a href="#">pants</a></dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt>more</dt>
+										<dd><a href="#">dresses</a></dd>
+										<dd><a href="#">jumpsuits + rompers</a></dd>
+										<dd><a href="#">skirts</a></dd>
+										<dd><a href="#">blouses</a></dd>
+										<dd><a href="#">cropped sweaters</a></dd>
+										<dd><a href="#">reworked sweatshirts</a></dd>
+									</dl>
+								</li>
 							</ul>
 						</li>
 						<li><a href="#">accessories</a></li>
