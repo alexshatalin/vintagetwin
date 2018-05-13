@@ -1,3 +1,33 @@
-.page_content {
-	padding-top: $desktop_header_height;
+.page_container {
+	&.remove_promo_bar {
+		@media screen and (min-width: 1025px) {
+			padding-top: rem(140);
+		}
+
+		// @media screen and (max-width: 1374px) {
+		// 	padding-top: rem(63);
+		// }	
+
+		@media screen and (max-width: 1074px) {
+			padding-top: rem(63);
+		}			
+
+
+		.main_header {
+			position: fixed;
+			// @media screen and (min-width: 1375px) {
+			// 	height: $desktop_header_height;
+			// }
+
+			// @media screen and (max-width: 1374px) {
+			// 	height: $mobile_header_height;
+			// }
+
+			
+			&__promo_bar {
+				display: none;
+			}
+		}
+	}
 }
+

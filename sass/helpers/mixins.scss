@@ -296,6 +296,7 @@
 	transform: $transform_type;
 }
 
+// @include transition(all 0.2s ease-out 0s);
 @mixin transition($transitions...) {
 	-webkit-transition: $transitions;
 	-moz-transition: $transitions;
