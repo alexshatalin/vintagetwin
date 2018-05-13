@@ -173,9 +173,6 @@ and (max-width: 1500px) {
 		width: auto;
 	}
 
-	&__secondary_nav {
-		
-	}
 }
 
 }////////
@@ -190,10 +187,14 @@ and (max-width: 1374px) {
 	}
 
 	&__logo {
-		width: 20em;
+		width: 25em;
 	}
 
 	&__nav {
+		ul {
+			margin: 4.1em 0 0 1.8em;
+		}
+	
 		li {
 			font-size: calc( 10px + (13 - 10) * (100vw - 1025px) / (1374 - 1025) );
 		}

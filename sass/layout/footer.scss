@@ -40,7 +40,15 @@
 	&__right_nav {
 		margin: 0;
 		padding: 0;
-		float: right;
+		@media screen and (min-width: 1025px) {
+			float: right;
+		}
+
+		@media screen and (max-width: 1024px) {
+			//float: none;
+			clear: left;
+		}
+		
 		color: white;
 		font-weight: 900;
 		
@@ -72,7 +80,66 @@
 		clear: both;
 		color: $footer_link_color;
 		font-family: 'Larsseit';
-		text-transform: uppercse;
+		text-transform: uppercase;
 	}
 
 }
+
+@media screen 
+and (max-width: 1500px) {
+
+.main_footer {
+	.container {
+		width: auto;
+	}
+}
+
+}////////
+
+@media screen 
+and (max-width: 1024px) {
+
+.main_footer {
+	padding: 5em 0 ;
+
+	&__content {
+		padding: 0 3em;
+	}
+
+	&__left_nav {
+		margin: 0 20% 0 0;
+
+		dt,dd {
+			font-size: 1em;
+		}
+	}
+
+	&__right_nav {
+		position: relative;
+		padding: 4em 0 0;
+
+		dt {
+			position: absolute;
+			left: 0;
+			font-size: 1.7em;
+			text-align: left;
+		}
+
+		dd {
+			margin: 0 0 0 1em;
+			font-size: 1.7em;
+
+			&:first-of-type {
+				margin: 0 0 0 72%;
+			}
+		}
+	}
+	
+	p {
+		margin: 3em 0 0;
+		text-align: center;
+	}
+	
+}
+
+}////////
