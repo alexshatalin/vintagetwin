@@ -11,6 +11,7 @@
 <body>
 	<div class="__dev__"></div>
 	<section class="page_container">
+		<? require_once(__DIR__ . '/components/mobile_nav.php'); ?>
 		<? require_once(__DIR__ . '/layout/header.php');?>
 		<section class="page_content">
 			<main><img src="dev/temp_home_d.jpg"></main>

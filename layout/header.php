@@ -9,7 +9,7 @@
 			<div class="main_header__nav">
 				<nav>
 					<ul>
-						<li class="active"><a href="#">clothing</a>
+						<li><a href="#">clothing</a>
 							<ul class="submenu clothing">
 								<li>
 									<dl>
