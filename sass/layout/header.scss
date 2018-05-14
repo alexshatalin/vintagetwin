@@ -103,40 +103,59 @@ $desktop_promobar_height: rem(40);
 		.submenu {
 			position: absolute;
 			top: 100%;
-			left: -2.4em;
+			left: -1.8em;
 			z-index: 4;
 			margin: 0;
-			padding: 0;
+			padding: 1.3em 1.6em;
 			background: white;
-			width: 31.6em;
 			display: none;
+			
+			&.clothing {
+				padding: 0;
+				width: 31.6em;
+
+				li {
+					margin: 0;
+					padding: 0;
+					display: table-cell;
+				}
+			}
+
+			&.accessories {
+				width: 17em;
+			}
+
+			&.home {
+				width: 10.6em;
+			}
+
+			a {
+				display: block;
+			}
 
 			li {
-				margin: 0;
-				padding: 1.2em 1.6em;
-				display: table-cell;
+				margin: 0 0 0.5em;
+				display: block;
+				font-size: 1.1em;
+				letter-spacing: 0.06em;
 
 				&:hover {
 					&:before {
 						display: none;
 					}
 				}
-
-				&:last-of-type {
-					padding: 1.2em 0;
-				}
 			}
+
 		}
 
 		dl {
 			margin: 0;
-			padding: 0;
+			padding: 1.2em 1.6em;
 			
 		}
 
-		dt,dd {
-			padding: 0 0 0.5em;
-			font-size: 0.8em;
+		dt,dd>a {
+			margin: 0 0 0.5em;
 			letter-spacing: 0.06em;
 		}
 

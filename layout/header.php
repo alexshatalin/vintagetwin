@@ -10,7 +10,7 @@
 				<nav>
 					<ul>
 						<li class="active"><a href="#">clothing</a>
-							<ul class="submenu">
+							<ul class="submenu clothing">
 								<li>
 									<dl>
 										<dt>unisex</dt>
@@ -35,9 +35,33 @@
 								</li>
 							</ul>
 						</li>
-						<li><a href="#">accessories</a></li>
-						<li><a href="#">home</a></li>
-						<li><a href="#">trending</a></li>
+						<li><a href="#">accessories</a>
+							<ul class="submenu accessories">
+								<li><a href="#">belts</a></li>
+								<li><a href="#">jewelry</a></li>
+								<li><a href="#">sunglasses + readers</a></li>
+								<li><a href="#">pins + patches</a></li>
+							</ul>
+						</li>
+						<li><a href="#">home</a>
+							<ul class="submenu home">
+								<li><a href="#">lighting</a></li>
+								<li><a href="#">storage</a></li>
+								<li><a href="#">art + decor</a></li>
+								<li><a href="#">kitchen</a></li>
+								<li><a href="#">vinyl</a></li>
+							</ul>
+						</li>
+						<li><a href="#">trending</a>
+							<ul class="submenu trending">
+								<li><a href="#">band tees</a></li>
+								<li><a href="#">basics</a></li>
+								<li><a href="#">champion</a></li>
+								<li><a href="#">adidas</a></li>
+								<li><a href="#">reworked</a></li>
+								<li><a href="#">harley</a></li>
+							</ul>
+						</li>
 						<li><a href="#">the vault</a></li>
 						<li><a href="#">jeanius bar</a></li>
 					</ul>
