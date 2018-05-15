@@ -29,5 +29,18 @@
 			}
 		}
 	}
+
+	&.mobile_menu_opened {
+
+		.page_overlay{
+			z-index: 9998;
+			opacity: 1;
+			@include transition(all 0.2s ease-out 0s);
+		}
+
+		.mobile_nav  {
+			@include transform(translateX(0));
+		}
+	}
 }
 

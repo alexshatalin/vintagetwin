@@ -2,10 +2,12 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	z-index: 9998;
+	z-index: -10;
 	background: rgba(255,255,255,0.95);
 	height: 100%;
 	width: 100%;
+	opacity: 0;
+	@include transition(all 0s ease-out 0.2s);
 }
 
 .mobile_nav {
@@ -16,19 +18,45 @@
 	background: $mobile_nav_bg;
 	border-right: 1px solid $mobile_nav_border_bg;
 	height: 100%;
-	width: rem(269);
+	width: rem(285);
+	overflow: hidden;
+	@include transform(translateX(-100%));
+	@include transition(all 0.2s ease-out 0.2s);
+	
+	&:before,&:after {
+		position: absolute;
+		top: 0;
+		z-index: 3;
+		height: 100%;
+		@extend %block_pseudo_container;
+	}
+
+	&:before {
+		left: 0;
+		background: $mobile_nav_bg;
+		width: 5.45em;
+	}
 
 	&:after {
-		@extend %fix_clear_container;
+		left: 5.45em;
+		background: white;
+		width: calc(100% - 5.45em);
+	}
+
+	nav {
+		z-index: 4;
+		&:after {
+			@extend %fix_clear_container;
+		}
 	}
 
 	ul {
-		margin: 0;
-		padding: 0;
 		list-style-type: none;
 	}
 
 	&__main_section {
+		margin: 0;
+		padding: 0;
 		float: left;
 		
 		li {
@@ -54,6 +82,144 @@
 			bottom: 0.2em;
 			@include transform(translateX(-50%));
 			text-transform: capitalize;
+		}
+	}
+
+	&__secondary {
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: -1;
+		width: calc(100% - 5.45em);
+		background: white;
+		margin: 0;
+		padding: 0;
+		opacity: 0;
+		@include transform(translateX(100%));
+		@include transition(opacity 0.2s ease-out 0s, all 0.2s ease-out 0.2s);
+
+		&.active {
+			z-index: 9;
+			opacity: 1;
+			@include transform(translateX(0));
+		}
+
+		li {
+			position: relative;
+			padding: 1.26em 1em 1.26em 1.6em;
+			border-bottom: 1px solid $mobile_nav_border_bg;
+			display: block;
+			font-size: 1.4em;
+			font-weight: bold;
+			text-transform: uppercase;
+		    letter-spacing: 0.1em;	
+
+		    &.back {
+	    		padding: 1.26em 1em 1.26em 4em;
+	   		}
+
+	   		&.has_link,&.accordion {
+				padding: 0;
+	   		}
+
+	   		&.accordion {
+	   			border: none;
+	   		}
+
+	   		a {
+	   			padding: 1.26em 1em 1.26em 1.6em;
+	   			display: block;
+	   			font-weight: 300;
+	   		}
+		}
+
+		.pointer {
+			position: absolute;
+			top: 0;
+			z-index: 5;
+			height: 100%;
+			width: 4em;
+			//background: orange;
+
+			.arrow {
+					position: absolute;
+					pointer-events: none;
+				}
+
+			&.right {
+				right: 0;
+				width: 2.75em;
+
+				.arrow {
+					left: 50%;
+					top: calc(50% - 5px);
+					@include transform(rotate(-45deg) translateX(-50%) translateY(-50%));
+				}
+			}
+
+			&.left {
+				left: 0;
+
+				.arrow {
+					left: calc(50% - 10px);
+					top: calc(50% - 5px);
+					@include transform(rotate(134deg) translateX(-50%) translateY(-50%));
+				}
+			}
+		}
+
+		.arrow {
+			display: block;
+			border-right: 2px solid black;
+			border-bottom: 2px solid black;
+			height: 10px;
+			width: 10px;
+		}
+
+		dl {
+			margin: 0;
+			padding: 0;
+
+			&.active {
+				dt {
+					&:after {
+						content: '-';
+					}
+				}
+
+				dd {
+					display: block;
+				}
+			}
+		}
+
+		dt {
+			position: relative;
+			padding: 1.26em 1em 1.26em 1.6em;
+			border-bottom: 1px solid $mobile_nav_border_bg;
+
+			&:after {
+				position: absolute;
+				right: 0.5em;
+				@extend %vertical_align_middle;
+				z-index: 5;
+				content: '+';
+				display: block;
+				color: black;
+				font-size: 1.4em;
+			}
+		}
+
+		dd {
+			margin: 0;
+			padding: 0 0 0 1em;
+			font-size: 0.9em;
+			border-bottom: 1px solid $mobile_nav_border_bg;
+			display: none;
+		}
+
+		dd>a {
+			padding: 1.56em 1em 1.557em 1.6em;
 		}
 	}
 }
