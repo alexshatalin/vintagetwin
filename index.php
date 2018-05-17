@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.mobile.min.js"></script>
 	<script src="js/nav_menu.js"></script>
 </head>
 <body>

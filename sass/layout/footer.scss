@@ -11,8 +11,11 @@
 	}
 	
 	&__left_nav {
-		margin: 0 17.1em 0 0;
 		float: left;
+		
+		&:first-of-type {
+			margin: 0 17.1em 0 0;
+		}
 
 		dt,dd {
 			text-transform: uppercase;
@@ -106,7 +109,9 @@ and (max-width: 1024px) {
 	}
 
 	&__left_nav {
-		margin: 0 20% 0 0;
+		&:first-of-type {
+			margin: 0 20% 0 0;
+		}
 
 		dt,dd {
 			font-size: 1em;
@@ -129,7 +134,7 @@ and (max-width: 1024px) {
 			font-size: 1.7em;
 
 			&:first-of-type {
-				margin: 0 0 0 72%;
+				margin: 0 0 0 71%;
 			}
 		}
 	}

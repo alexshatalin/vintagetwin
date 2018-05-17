@@ -1,5 +1,5 @@
 <div class="page_overlay"></div>
-<section class="mobile_nav">
+<div class="mobile_nav">
 	<nav>
 		<ul class="mobile_nav__main_section">
 			<li data-id="shop" data-level="0" class="active">
@@ -96,4 +96,4 @@
 			<li class="has_link"><a href="#">harley</a></li>
 		</ul>
 	</nav>
-</section>
+</div>

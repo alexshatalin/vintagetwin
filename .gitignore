@@ -1,3 +1,5 @@
 *.DS_Store
 *.sass-cache
 *style.css.map
+*server_info.txt
+*sftp-config.json
