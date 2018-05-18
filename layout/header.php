@@ -1,5 +1,5 @@
 <header class="main_header">
-<div class="main_header__promo_bar"><div class="text"><span>50% sale.</span>just today</div></div>
+<div class="main_header__promo_bar"><div class="text"><span>50% sale.</span> just today.</div></div>
 <div class="bottom_nav_content">
 	<div class="container">
 	<div class="row">

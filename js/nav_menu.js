@@ -10,6 +10,7 @@
 		vtObj.menuOpen = false;
 		vtObj.windowWidth = $(window).width();
 		vtObj.headerHeight = $('.main_header__promo_bar').outerHeight();
+		vtObj.mobileFormTimer;
 
 		$('body').on('click touchstart', '[data-id="mobile_nav_button"]', function(){
 			$("html, body").animate({ scrollTop: 0 }, 0);
@@ -17,7 +18,6 @@
 				$('.page_container').addClass('mobile_menu_opened').dequeue();
 				vtObj.menuOpen = true;
 			} 
-
 			
 		}).on('click touchstart', '.page_overlay', function(){
 			vtObj.closeMobileNav();
@@ -39,7 +39,23 @@
 				$('[data-level="-1"]').removeClass('active');
 				$('[data-id="'+ vtObj.currentElem +'"]').addClass('active');
 			}
+
+			if( vtObj.currentElem == 'create_account' && vtObj.currentLevel == 2 ) {
+				$('.mobile_nav').addClass('sign_in_opened');
+				vtObj.createAccount();
+			}
+
+			if( vtObj.currentElem == 'sign_in' && vtObj.currentLevel == 2 ) {
+				$('.mobile_nav').addClass('sign_in_opened');
+				vtObj.createSignin();
+			}
+
+			if( vtObj.currentElem != undefined && vtObj.currentLevel == -2 ) {
+				vtObj.removeAccountMenu();
+			}
 			
+		}).on('click touchstart', '[data-id="accordion"]', function(){
+			$(this).closest('dl').toggleClass('inactive');
 		});
 	});
 
@@ -71,21 +87,41 @@
 		}
 	});
 
-	vtObj.setScrollOffset = function(){
-
-	};
-
 	vtObj.closeMobileNav = function(){
 		$('.page_container').removeClass('mobile_menu_opened');
+		$('.mobile_nav').removeClass('sign_in_opened');
 		vtObj.menuOpen = false;
 	};
 
-	// vtObj.set_animation = function(callback) {
-	// 	$(window).scrollTop(0);
+	vtObj.createSignin = function(){
+		//$('.mobile_nav').addClass('sign_in_opened');
+		$('[data-id="form_title_top"]').text('sign in');
+		$('[data-id="forgot_password"]').removeClass('invisible');
+		$('[data-text-left="form_title_left"]').text('create account');
+		$('[data-text-right="form_title_right"]').addClass('hide');
+	};
+
+	vtObj.createAccount = function(){
+		//$('.mobile_nav').addClass('sign_in_opened');
+		$('[data-id="form_title_top"]').text('create an account');
+		$('[data-id="forgot_password"]').addClass('invisible');
+		$('[data-text-left="form_title_left"]').text('already have an account?');
+		$('[data-text-left="form_title_right"]').removeClass('hide');
+	};
+
+	vtObj.removeAccountMenu = function() {
+		window.clearTimeout(vtObj.mobileFormTimer);
+		$('.mobile_nav').removeClass('sign_in_opened');
+		vtObj.mobileFormTimer = window.setTimeout(function(){
+			//vtObj.createSignin();
+		}, 200);
+	};
+	// vtObj.delayMobileFormChanges = function(callback) {
+		
 	// 	if (typeof callback === 'function' ) {
 	// 		callback();
 	// 	}
-	// }
+	// };
 
 })();
 

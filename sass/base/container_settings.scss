@@ -693,10 +693,10 @@
   float: left !important;
 }
 .hide {
-  display: none !important;
+  display: none;
 }
 .show {
-  display: block !important;
+  display: block;
 }
 .invisible {
   visibility: hidden;
@@ -709,7 +709,7 @@
   border: 0;
 }
 .hidden {
-  display: none !important;
+  display: none;
 }
 .affix {
   position: fixed;

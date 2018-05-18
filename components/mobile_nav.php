@@ -27,8 +27,8 @@
 		</ul>
 
 		<ul data-id="account" data-level="1" class="mobile_nav__secondary">
-			<li data-id="sign_in" data-level="1">sign in</li>
-			<li data-id="create_an_account" data-level="1">create an account</li>
+			<li data-id="sign_in" data-level="2">sign in</li>
+			<li data-id="create_account" data-level="2">create an account</li>
 		</ul>
 
 		<ul data-id="favorite" data-level="1" class="mobile_nav__secondary">
@@ -40,8 +40,8 @@
 		<ul data-id="clothing" data-level="-1" class="mobile_nav__secondary">
 			<li data-id="shop" data-level="-1" class="back">clothing<span class="pointer left"><span class="arrow"></span></span></li>
 			<li class="accordion">
-				<dl class="active">
-					<dt>unisex</dt>
+				<dl>
+					<dt data-id="accordion">unisex</dt>
 					<dd><a href="#">t-shirts</a></dd>
 					<dd><a href="#">sweatshirts</a></dd>
 					<dd><a href="#">button downs</a></dd>
@@ -50,7 +50,7 @@
 					<dd><a href="#">pants</a></dd>
 				</dl>
 				<dl>
-					<dt>more</dt>
+					<dt data-id="accordion">more</dt>
 					<dd><a href="#">dresses</a></dd>
 					<dd><a href="#">jumpsuits + rompers</a></dd>
 					<dd><a href="#">skirts</a></dd>
@@ -94,6 +94,31 @@
 			<li class="has_link"><a href="#">adidas</a></li>
 			<li class="has_link"><a href="#">reworked</a></li>
 			<li class="has_link"><a href="#">harley</a></li>
+		</ul>
+
+		<ul data-id="sign_in" class="mobile_nav__form">
+			<li data-id="account" data-level="-2" class="header"><div class="back_button"><span class="caret">&lsaquo;</span><span>back</span></div> <img src="images/logo.png" alt="The Vintage Twin" /></li>
+			<li>
+				<div class="account_section">
+					<div data-id="form_title_top" class="title top">create an account</div>
+					<label>
+						<div class="title grey">email address<sup>*</sup></div>
+						<input class="field" type="email" name="email">
+					</label>
+
+					<label>
+						<div class="title grey">password<sup>*</sup></div>
+						<input class="field" type="password" name="password" minlength="8" required>
+					</label>
+					<div data-id="forgot_password" class="title grey invisible">forgot your password?</div>
+
+					<input class="submit" type="submit" value="sign in">
+				</div>
+				<ul class="bottom_links">
+					<li data-text-left="form_title_left" class="title left">already an account?</li>
+					<li data-text-right="form_title_right" class="title right">login</li>
+				</ul>
+			</li>
 		</ul>
 	</nav>
 </div>

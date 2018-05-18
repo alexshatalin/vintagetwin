@@ -30,7 +30,7 @@ $desktop_promobar_height: rem(40);
 		font-weight: 300;
 		text-align: center;
 		text-transform: uppercase;
-		letter-spacing: 0.3em;
+		letter-spacing: 0.2em;
 
 		span {
 			color: $promo_highlight;
@@ -54,8 +54,6 @@ $desktop_promobar_height: rem(40);
 		@media screen and (max-width: 1024px) {
 			height: $mobile_header_height;
 		}
-
-		
 	}
 
 	&__logo {
@@ -102,7 +100,7 @@ $desktop_promobar_height: rem(40);
 
 		.submenu {
 			position: absolute;
-			top: 100%;
+			top: calc(100% + 0.3em);
 			left: -1.8em;
 			z-index: 4;
 			margin: 0;
@@ -160,7 +158,7 @@ $desktop_promobar_height: rem(40);
 		}
 
 		dt {
-			font-weight: 500;
+			font-weight: 700;
 		}
 
 		dd {
