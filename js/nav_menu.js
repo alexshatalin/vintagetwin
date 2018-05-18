@@ -106,7 +106,7 @@
 		$('[data-id="form_title_top"]').text('create an account');
 		$('[data-id="forgot_password"]').addClass('invisible');
 		$('[data-text-left="form_title_left"]').text('already have an account?');
-		$('[data-text-left="form_title_right"]').removeClass('hide');
+		$('[data-text-right="form_title_right"]').removeClass('hide');
 	};
 
 	vtObj.removeAccountMenu = function() {
