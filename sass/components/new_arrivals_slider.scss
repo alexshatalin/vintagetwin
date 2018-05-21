@@ -1,0 +1,8 @@
+.new_arrivals {
+	margin: 6em 0 0;
+
+	.text {
+		margin-left: 1.1em;
+		@extend %text;
+	}
+}

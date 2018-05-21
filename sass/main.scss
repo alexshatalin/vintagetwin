@@ -15,11 +15,16 @@ Version: 1.00
 @import "helpers/placeholders";
 @import "base/typography";
 @import "base/reset";
+@import "base/page_defaults";
 @import "base/dev";
 @import "base/container_settings";
 
 
 @import "components/mobile_nav";
+@import "components/slider_global";
+@import "components/hero_slider";
+@import "components/clothing";
+@import "components/new_arrivals_slider";
 //@import "components/moible_menu";
 //@import "components/page_settings_global";
 //@import "components/search_container";

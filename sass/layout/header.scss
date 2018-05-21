@@ -47,6 +47,8 @@ $desktop_promobar_height: rem(40);
 	}
 
 	.bottom_nav_content {
+		border-bottom: 1px solid $header_border_color;
+
 		@media screen and (min-width: 1025px) {
 			height: $desktop_header_height;
 		}
@@ -244,7 +246,7 @@ $desktop_promobar_height: rem(40);
 }
 
 @media screen 
-and (max-width: 1500px) {
+and (max-width: 1499px) {
 
 .main_header {
 	.container {

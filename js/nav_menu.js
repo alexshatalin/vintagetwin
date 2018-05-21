@@ -1,6 +1,6 @@
 (function() {
 	'use strict';
-	var vtObj = {};
+	let vtObj = {};
 	vtObj.resizeState;
 	vtObj.scrollState;
 	vtObj.headerHeight;
