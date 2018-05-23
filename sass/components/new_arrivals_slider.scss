@@ -1,8 +1,83 @@
 .new_arrivals {
 	margin: 6em 0 0;
+	overflow: hidden;
 
 	.text {
 		margin-left: 1.1em;
 		@extend %text;
+	}
+
+	.slider_content {
+		margin: 0 -2.8em;
+	}
+
+	.slider_mask,.single_slide {
+		position: relative;
+	}
+
+	.slider_mask:after {
+		@extend %fix_clear_container;
+	}
+
+	.single_slide, .single_slide:first-of-type  {
+		left: auto;
+	}
+
+	.single_slide {
+		margin: 0 0.7em;
+		height: auto;
+		width: 24.8em;
+		float: left;
+	}
+
+	a {
+		display: block;
+	}
+
+	.slide_content {
+		margin: 1em 0;
+		font-size: 1.4em;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	.product_type {
+		text-transform: uppercase;
+	}
+}
+
+.homepage_bottom_slider {
+	overflow: hidden;
+
+	.text {
+		margin-left: 1.1em;
+		@extend %text;
+	}
+
+	.slider_content {
+		margin: 0 -2.8em;
+	}
+
+	.slider_mask,.single_slide {
+		position: relative;
+	}
+
+	.slider_mask:after {
+		@extend %fix_clear_container;
+	}
+
+	.single_slide, .single_slide:first-of-type  {
+		left: auto;
+	}
+
+	.single_slide {
+		margin: 0 0.7em;
+		height: auto;
+		width: 37em;
+		float: left;
+
+		img {
+			width: 100%;
+		}
 	}
 }

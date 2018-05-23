@@ -22,7 +22,15 @@
 
 			if ( true == opts.main_pagination ) {
 				mask.before('<div class="prev_button"></div><div class="next_button"></div>');
-			}		
+			}	
+
+			if( true == opts.slider ) {
+				let slide_margin = parseInt(slides.css('margin-left'));
+				console.log(slide_margin);
+				mask.css({
+					'width': $(window).width() * num_of_slides
+				});
+			}	
 
 			container.on("click", ".next_button", function () {
 				if (container.animating) {
@@ -54,7 +62,7 @@
 					if (slide_index < 0) {
 						slide_index = num_of_slides - 1;
 					}
-				}
+				} 
 
 				if (n > 0) {
 					set_animation(function () {
@@ -101,6 +109,18 @@
 $(document).ready(function(){
 	$('.slider.hero').vtSlider({
 		main_pagination: true,
+		dur_time: 200
+	});
+
+	$('.slider.new_arrivals').vtSlider({
+		main_pagination: true,
+		slider: true,
+		dur_time: 200
+	});
+
+	$('.slider.homepage_bottom_slider').vtSlider({
+		main_pagination: true,
+		slider: true,
 		dur_time: 200
 	});
 });

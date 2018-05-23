@@ -686,6 +686,13 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.centered {
+  display: block;
+  margin: 0 auto;
+  float: none;
+}
+
 .pull-right {
   float: right !important;
 }

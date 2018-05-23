@@ -1,0 +1,116 @@
+.clothing {
+
+	&.homepage {
+		padding: 30px 0;
+
+		@media (max-width: 767px) {
+			padding: 0;
+		}
+	}
+
+	@media (min-width: 768px) 
+	   and (max-width: 1500px) {
+	   	.container {
+			width: calc(100% - 30px);
+		}
+	}
+}
+
+.single_product {
+	@media (max-width: 767px) {
+		margin: 15px 0;
+	}
+
+	img {
+		position: relative;
+		z-index: 7;
+		width: 100%;
+	}
+
+	.text {
+		position: absolute;
+		left: 1.1em;
+		bottom: 1.2em;
+		z-index: 8;
+		@extend %text;
+	}
+}
+
+.featured_section,.new_arrivals {
+	@media (min-width: 768px) 
+	   and (max-width: 1500px) {
+	   	.container {
+			width: calc(100% - 30px);
+		}
+	}
+}
+
+.read_full_story {
+	margin: 7.8em 0;
+	text-align: right;
+
+	.content {
+		position: absolute;
+		left: 19.7%;
+		top: 44%;
+		z-index: 8;
+		@include transform(translateY(-50%));
+	}
+
+	h1 {
+		margin: 0 0 1em;
+		@extend %text;
+		line-height: 1.5;
+	}
+
+	@extend %link_pointer;
+
+	a {
+		margin-right: 2.1em;
+	}
+
+	.featured_image {
+		padding: 33.2em 32em;
+		background: url('images/store_image.jpg') no-repeat right top;
+		//width: 60%;
+	}
+}
+
+.subscribe_container {
+	margin: 10.2em 0 8em;
+
+	.text {
+		@extend %text;
+		font-size: 2.2em;
+		line-height: 1.2;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	.subscribe_form {
+		margin: 6.6em 15% 0;
+		padding: 0 0 1.5em;
+		border-bottom: 1px solid black;
+		//display: table;
+	}
+
+	input {
+		color: black;
+		font-size: 1.4em;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	input[type="text"] {
+		min-width: 78%;
+		width: auto;
+	}
+
+	.subscribe {
+		min-width: 20%;
+		width: auto;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+	}
+}	
