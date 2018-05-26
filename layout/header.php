@@ -4,7 +4,7 @@
 	<div class="container">
 	<div class="row">
 		<div class="col-lg-12">
-			<div data-id="mobile_nav_button" class="main_header__menu_button"><span></span></div>
+			<div data-id="mobile_nav_button" class="main_header__menu_button"><span class="fa fa-bars"></span></div>
 			<div class="main_header__logo"><img src="images/logo.png" alt="The Vintage Twin" /></div>
 			<div class="main_header__nav">
 				<nav>
@@ -67,16 +67,54 @@
 					</ul>
 				</nav>
 			</div>
-			<div class="main_header__secondary_nav">
-				<nav>
-					<ul>
-						<li><i class="fas fa-search"></i></li>
-						<li class="account">account</li>
-						<li><i class="far fa-heart"></i></li>
-						<li class="cart"><i class="fas fa-shopping-bag"></i></li>
-					</ul>
-				</nav>
-			</div>
+			<nav class="main_header__secondary_nav">
+				<ul>
+					<li data-id="search_content"><i class="fas fa-search"></i></li>
+					<li data-id="account_content" class="account_header">account</li>
+					<li data-id="favorites_content"><i class="far fa-heart"></i></li>
+					<li data-id="cart_content" class="cart"><i class="fas fa-shopping-bag"></i></li>
+				</ul>
+				<div class="main_header__secondary_nav_body">
+					<div data-id="search_content" class="featured_section">
+						<label>
+							<span class="black">search</span>
+							<div class="search_section">
+								<input class="search_bar" type="text" name="search">
+								<button type="submit" class="submit">
+								    <i class="fas fa-search"></i>
+								</button>
+							</div>
+						</label>
+					</div>
+
+					<div data-id="account_content" class="featured_section">
+						<div class="title black top">login</div>
+
+						<label class="single_label">
+							<div class="title grey">email address<sup>*</sup></div>
+							<input class="field" type="email" name="email">
+						</label>
+
+						<label class="single_label">
+							<div class="title grey">password<sup>*</sup></div>
+							<input class="field" type="password" name="password" minlength="8" required>
+						</label>
+
+						<div class="title grey">forgot your password?</div>
+						<input class="login" type="submit" value="log in">
+						<div class="title black bottom">create account</div>
+
+					</div>
+
+					<div data-id="favorites_content" class="featured_section">
+						
+					</div>
+
+					<div data-id="cart_content" class="featured_section">
+						
+					</div>
+				</div>
+			</nav>
 		</div>
 	</div>
 	</div>
