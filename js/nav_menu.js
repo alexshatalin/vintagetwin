@@ -132,7 +132,7 @@
 
 	vtObj.removeSecondaryNav = function(e) {
 		$('.main_header__secondary_nav_body').removeClass('opened');
-		$('[data-id="account_content"]').removeClass('active');
+		$('.main_header__secondary_nav li,.main_header__secondary_nav .featured_section').removeClass('active');
 		
 	};
 	// vtObj.delayMobileFormChanges = function(callback) {
