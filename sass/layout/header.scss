@@ -255,7 +255,7 @@ $desktop_promobar_height: rem(40);
 
 			.title {
 				margin: 0 0 1em;
-				font-size: 1.2em;
+				font-size: 1.1em;
 				font-weight: 700;
 				text-transform: uppercase;
 				letter-spacing: 0.13em;
@@ -316,6 +316,87 @@ $desktop_promobar_height: rem(40);
 			font-size: 1.18em;
 			font-weight: 900;
 			text-transform: uppercase;
+		}
+
+		.cart_items {
+			display: table;
+		}
+
+		.cell {
+			display: table-cell;
+			vertical-align: top;
+
+			&:nth-of-type(2) {
+				padding: 0 1em 0 2em;
+			}
+		}
+
+		.cart_description,.remove_item {
+			color: $cart_description_color;
+			font-size: 1.1em;
+			text-transform: uppercase;
+			font-weight: 500;
+			line-height: 1.8;
+		}
+
+		.remove_item {
+			margin: 0.7em 0 0;
+			color: $cart_remove_item_color;
+			font-weight: 500;
+			cursor: pointer;
+		}
+
+		.cart_checkout_section {
+			margin: 5.2em 0 0;
+			padding: 1.6em 0 0;
+
+			&:before {
+				@extend %block_pseudo_container;
+				position: absolute;
+				left: -1.6em;
+				top: 0;
+				background: $secondary_nav_border;
+				height: 1px;
+				width: calc(100% + 3.2em);
+			}
+
+			.title:nth-of-type(1) {
+				float: left;
+			}
+			.title:nth-of-type(2) {
+				float: right;
+			}
+
+			&:after {
+				@extend %fix_clear_container;
+			}
+		}
+
+		.secondary_text {
+			margin: 1em 0;
+			color: black;
+			font-size: 1.6em;
+			font-weight: 500;
+			line-height: 1.5;
+			text-align: left;
+			clear: left;
+		}
+
+		.checkout {
+			padding: 1em 0;
+			background: black;
+			color: white;
+			font-size: 1.6em;
+			font-weight: 900;
+			text-transform: uppercase;
+		}
+
+		.view_my_bag {
+			margin: 1em auto 0;
+			display: table;
+			color: black;
+			font-size: 1.6em;
+			text-decoration: underline;
 		}
 	}
 

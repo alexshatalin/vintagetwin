@@ -111,7 +111,28 @@
 					</div>
 
 					<div data-id="cart_content" class="featured_section">
-						
+						<div class="title black top">ITEMS ADDED TO BAG</div>
+						<div class="cart_items">
+							<div class="cell">
+								<img src="images/cart1.jpg" alt="Featured Image" />
+							</div>
+							<div class="cell">
+								<div class="title black top">STUDDED PANEL JEAN</div>
+								<div class="cart_description">SIZE : M</div>
+								<div class="cart_description">Only 1 Left!</div>
+								<div class="remove_item">x remove</div>
+							</div>
+							<div class="cell">
+								<div class="title black top">$ 1,795.00</div>
+							</div>
+						</div>
+						<div class="cart_checkout_section">
+							<div class="title black">subtotal</div>
+							<div class="title black">$ 1,795.00</div>
+							<div class="secondary_text">Items in your bag are not reserved until you complete checkout</div>
+							<button type="submit" class="checkout">checkout</button>
+							<div class="view_my_bag"><a href="#">View my bag</a></div>
+						</div>
 					</div>
 				</div>
 			</nav>

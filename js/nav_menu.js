@@ -59,9 +59,8 @@
 		});
 
 		$('body').on('click touchstart', '.main_header__secondary_nav,.main_header__secondary_nav_body', function(e){
-			let currentElem = $(e.target).attr('data-id');			
 			e.stopPropagation();
-
+			let currentElem = $(e.target).attr('data-id');			
 			if( currentElem ) {
 				$('.main_header__secondary_nav_body').addClass('opened');
 				$('.main_header__secondary_nav li,.main_header__secondary_nav .featured_section').removeClass('active');
