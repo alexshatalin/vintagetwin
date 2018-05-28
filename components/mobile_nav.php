@@ -100,6 +100,9 @@
 			<li data-id="account" data-level="-2" class="header"><div class="back_button"><span class="caret">&lsaquo;</span><span>back</span></div> <img src="images/logo.png" alt="The Vintage Twin" /></li>
 			<li>
 				<div class="account_section">
+					<? require(__DIR__ . '/../components/account_fields.php'); ?>
+				</div>
+				<!-- <div class="account_section">
 					<div data-id="form_title_top" class="title top">create an account</div>
 					<label>
 						<div class="title grey">email address<sup>*</sup></div>
@@ -117,7 +120,7 @@
 				<ul class="bottom_links">
 					<li data-text-left="form_title_left" class="title left">already an account?</li>
 					<li data-text-right="form_title_right" class="title right">login</li>
-				</ul>
+				</ul> -->
 			</li>
 		</ul>
 	</nav>

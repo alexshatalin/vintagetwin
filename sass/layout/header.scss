@@ -433,7 +433,7 @@ $desktop_promobar_height: rem(40);
 		left: 15px;
 		z-index: 9;
 		@extend %vertical_align_middle;
-		padding: 20px;
+		//padding: 20px;
 		display: none;
 		opacity: 1;
 		@extend %cp;

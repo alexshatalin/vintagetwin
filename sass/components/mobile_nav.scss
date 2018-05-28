@@ -297,6 +297,14 @@
 			}
 		}
 
+		.account_panel {
+			display: none;
+
+			&.active {
+				display: block;
+			}
+		}
+
 		.title {
 			color: black;
 			font-size: 1.3em;
@@ -323,8 +331,8 @@
 			font-size: 1.5em;
 		}
 
-		.submit {
-			margin: 1.3em 0 0;
+		.login {
+			margin: 1.3em 0;
 			padding: 0.9em 0;
 			background: black;
 			color: white;
@@ -353,10 +361,31 @@
 			line-height: 1;
 		}
 
-		.bottom_links {
+		div[data-id="forgot_password"] {
+			.single_label.top {
+				margin: 5em 0 0;
+			}
+		} 
+
+		.single_label.top {
+			margin: 0 0 5em;
+		}
+
+		.active_link[data-id="create_account"],.active_link[data-id="account_content"] {
 			margin: 0;
-			padding: 1.5em 1.8em;
-			border-top: 1px solid $mobile_nav_border_bg;
+			padding: 1.5em 0;
+			//border-top: 1px solid $mobile_nav_border_bg;
+
+			&:before {
+				@extend %block_pseudo_container;
+				position: absolute;
+				left: -1.8em;
+				top: 0;
+				background: $mobile_nav_border_bg;
+				height: 1px;
+				width: calc(100% + 3.6em);
+
+			}
 
 			@media screen 
 				and (min-width: 768px) 
@@ -365,13 +394,7 @@
 					
 			}
 			
-			&:after {
-				@extend %fix_clear_container;
-			}
-
-			li {
-				cursor: pointer;
-			}
+			
 		}
 	}
 }
