@@ -9,6 +9,8 @@
 		</div>
 	</div>
 	<div class="slider_content">
+		<div class="left_overlay"></div>
+		<div class="right_overlay"></div>
 		<div class="slider_mask">
 
 			<div class="single_slide">

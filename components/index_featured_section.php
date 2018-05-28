@@ -4,7 +4,7 @@
 			<div class="col-lg-12">
 				<div class="single_product">
 					<img src="images/homepage_featured_image.jpg" alt="Featured Product" />
-					<div class="text active">bare</div>
+					<div class="text active"><a href="#">bare</a></div>
 				</div>
 			</div>
 		</div>

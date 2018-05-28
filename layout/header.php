@@ -71,7 +71,7 @@
 				<ul>
 					<li data-id="search_content"><i class="fas fa-search"></i></li>
 					<li data-id="account_content" class="account_header">account</li>
-					<li data-id="favorites_content"><i class="far fa-heart"></i></li>
+					<li><a href="/favorites"><i class="far fa-heart"></i></a></li>
 					<li data-id="cart_content" class="cart"><i class="fas fa-shopping-bag"></i></li>
 				</ul>
 				<div class="main_header__secondary_nav_body">
@@ -88,26 +88,50 @@
 					</div>
 
 					<div data-id="account_content" class="featured_section">
-						<div class="title black top">login</div>
 
-						<label class="single_label">
-							<div class="title grey">email address<sup>*</sup></div>
-							<input class="field" type="email" name="email">
-						</label>
+						<div data-id="account_content" class="account_panel active">
+							<div class="title black top">login</div>
+							<label class="single_label">
+								<div class="title grey">email address<sup>*</sup></div>
+								<input class="field" type="email" name="email">
+							</label>
 
-						<label class="single_label">
-							<div class="title grey">password<sup>*</sup></div>
-							<input class="field" type="password" name="password" minlength="8" required>
-						</label>
+							<label class="single_label">
+								<div class="title grey">password<sup>*</sup></div>
+								<input class="field" type="password" name="password" minlength="8" required>
+							</label>
 
-						<div class="title grey">forgot your password?</div>
-						<input class="login" type="submit" value="log in">
-						<div class="title black bottom">create account</div>
+							<div data-id="forgot_password" data-role="secondary" class="title grey top active_link">forgot your password?</div>
+							<input class="login" type="submit" value="log in">
+							<div data-id="create_account" data-role="secondary" class="title black bottom active_link">create account</div>
+						</div>
 
-					</div>
+						<div data-id="forgot_password" class="account_panel">
+							<div class="title black">forgot your password?</div>
+							<p>Please enter your email address below and we’ll send you instructions to reset your password.</p>
+							<label class="single_label top">
+								<div class="title grey">email address<sup>*</sup></div>
+								<input class="field" type="email" name="forgot_password">
+							</label>
+							<input class="login" type="submit" value="send" name="send_new_password">
+						</div>
 
-					<div data-id="favorites_content" class="featured_section">
-						
+						<div data-id="create_account" class="account_panel">
+							<div class="title black top">create an account</div>
+							<label class="single_label">
+								<div class="title grey">email address<sup>*</sup></div>
+								<input class="field" type="email" name="create_account_email">
+							</label>
+
+							<label class="single_label top">
+								<div class="title grey">password<sup>*</sup></div>
+								<input class="field" type="password" name="create_account_password" minlength="8" required>
+							</label>
+
+							<input class="login" type="submit" value="sign up">
+							<div data-id="account_content" class="title black bottom active_link">already have an account?</div>
+						</div>
+
 					</div>
 
 					<div data-id="cart_content" class="featured_section">
@@ -117,10 +141,12 @@
 								<img src="images/cart1.jpg" alt="Featured Image" />
 							</div>
 							<div class="cell">
-								<div class="title black top">STUDDED PANEL JEAN</div>
-								<div class="cart_description">SIZE : M</div>
-								<div class="cart_description">Only 1 Left!</div>
-								<div class="remove_item">x remove</div>
+								<div class="cart_top_content">
+									<div class="title black top">STUDDED PANEL JEAN</div>
+									<div class="cart_description">SIZE : M</div>
+									<div class="cart_description">Only 1 Left!</div>
+									<div class="remove_item">x remove</div>
+								</div>
 							</div>
 							<div class="cell">
 								<div class="title black top">$ 1,795.00</div>

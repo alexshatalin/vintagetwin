@@ -8,7 +8,7 @@
 	}
 
 	.slider_content {
-		margin: 0 -2.8em;
+		margin: 0 -1.4em;
 	}
 
 	.slider_mask,.single_slide {
@@ -26,7 +26,8 @@
 	.single_slide {
 		margin: 0 0.7em;
 		height: auto;
-		width: 24.8em;
+		width: 28.4em;
+		//width: calc(100vw / 6);
 		float: left;
 	}
 
@@ -43,6 +44,38 @@
 
 	.product_type {
 		text-transform: uppercase;
+	}
+
+	.next_button,.prev_button {
+		top: 50%;
+		padding: 1.3em;
+	}
+
+	.next_button {
+		right: 3.9em;
+		@include transform(translateY(-50%) rotate(-135deg));
+	}
+
+	.prev_button {
+		left: 3.9em;
+		@include transform(translateY(-50%) rotate(45deg));
+	}
+
+	.left_overlay,.right_overlay {
+		position: absolute;
+		top: 0;
+		z-index: 10;
+		background: rgba(255,255,255,0.67);
+		height: 100%;
+		width: 14.2em;
+	}
+
+	.left_overlay {
+		left: 1.4em;
+	}
+
+	.right_overlay {
+		right: 1.4em;
 	}
 }
 

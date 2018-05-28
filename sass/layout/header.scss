@@ -229,8 +229,11 @@ $desktop_promobar_height: rem(40);
 			z-index: 4;
 			background: white;
 			box-shadow: -3px 3px 7px 0px rgba(0,0,0,0.35);
-			//height: 42em;
 			width: 34.5em;
+
+			@media (max-width: 480px) {
+				width: 100vw;
+			}
 			display: none;
 
 			&.opened {
@@ -267,7 +270,22 @@ $desktop_promobar_height: rem(40);
 				&.bottom {
 					margin: 2.5em 0 0;
 				}
+			}
+
+			.account_panel {
+				p {
+					margin: 0 0 2.5em;
+					font-size: 1.2em;
+				}
 			}	
+		}
+
+		.account_panel {
+			display: none;
+
+			&.active {
+				display: block;
+			}
 		}
 
 		.featured_section {
@@ -279,6 +297,10 @@ $desktop_promobar_height: rem(40);
 			&.active {
 				display: block;
 			}
+		}
+
+		.active_link {
+			cursor: pointer;
 		}
 
 		.search_bar,.field {
@@ -296,6 +318,10 @@ $desktop_promobar_height: rem(40);
 		.single_label {
 			margin: 0 0 1em;
 			display: block;
+
+			&.top {
+				margin: 0 0 2em;
+			}
 		}
 
 		.submit {
@@ -313,9 +339,10 @@ $desktop_promobar_height: rem(40);
 			padding: 1em;
 			background: black;
 			color: white;
-			font-size: 1.18em;
+			font-size: 1.2em;
 			font-weight: 900;
 			text-transform: uppercase;
+			letter-spacing: 0.1em;
 		}
 
 		.cart_items {
@@ -386,9 +413,10 @@ $desktop_promobar_height: rem(40);
 			padding: 1em 0;
 			background: black;
 			color: white;
-			font-size: 1.6em;
+			font-size: 1.2em;
 			font-weight: 900;
 			text-transform: uppercase;
+			letter-spacing: 0.1em;
 		}
 
 		.view_my_bag {

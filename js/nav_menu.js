@@ -60,12 +60,22 @@
 
 		$('body').on('click touchstart', '.main_header__secondary_nav,.main_header__secondary_nav_body', function(e){
 			e.stopPropagation();
-			let currentElem = $(e.target).attr('data-id');			
-			if( currentElem ) {
+			let currentElem = $(e.target).attr('data-id'),
+				currentDataRole = $(e.target).attr('data-role');	
+
+			if( currentElem != undefined && currentDataRole != 'secondary' ) {
 				$('.main_header__secondary_nav_body').addClass('opened');
-				$('.main_header__secondary_nav li,.main_header__secondary_nav .featured_section').removeClass('active');
+				$('.main_header__secondary_nav li,.main_header__secondary_nav .featured_section,.account_panel').removeClass('active');
 				$('[data-id="'+ currentElem +'"]').addClass('active');
 			} 
+
+			if( currentElem != undefined && currentDataRole == 'secondary' ) {
+				$('.account_panel').removeClass('active');
+				$('.account_panel[data-id="'+ currentElem +'"]').addClass('active');
+			}
+
+			
+
 		}).on('click touchstart', function(){
 			vtObj.removeSecondaryNav();
 		});
@@ -131,7 +141,7 @@
 
 	vtObj.removeSecondaryNav = function(e) {
 		$('.main_header__secondary_nav_body').removeClass('opened');
-		$('.main_header__secondary_nav li,.main_header__secondary_nav .featured_section').removeClass('active');
+		$('.main_header__secondary_nav li,.main_header__secondary_nav .featured_section,.account_panel').removeClass('active');
 		
 	};
 	// vtObj.delayMobileFormChanges = function(callback) {

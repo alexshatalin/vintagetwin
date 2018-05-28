@@ -4,6 +4,7 @@
 		obj.defaults = {
 			carousel: false,
 			slider: false,
+			slider_offset: false,
 			fadeIn: false,
 			main_pagination: false,
 			secondary_pagination: false,
@@ -13,8 +14,9 @@
 		var opts = $.extend({}, obj.defaults, options);
 		return obj.filter('[data-id="slider"]').each(function () {
 			var container = $(this),
-				mask = container.find(".slider_mask"),
-				slides = container.find(".single_slide"),
+				main_parent = container.children('.slider_content'),
+				mask = container.find('.slider_mask'),
+				slides = container.find('.single_slide'),
 				num_of_slides = slides.length,
 				slide_index = 0,
 				timer;
@@ -25,10 +27,17 @@
 			}	
 
 			if( true == opts.slider ) {
-				let slide_margin = parseInt(slides.css('margin-left'));
-				console.log(slide_margin);
+				let slide_margin = Math.abs(parseInt(main_parent.css('margin-left'))),
+					slide_width = slides.width(),
+					mask_offset = null;
+
+				if( true == opts.slider_offset ) {
+					//mask_offset = Math.floor((slide_width / 2) + (slide_margin * 2)); 
+				};
+
 				mask.css({
-					'width': $(window).width() * num_of_slides
+					'width': (slide_width + (slide_margin * 2)) * num_of_slides,
+					//'left': -mask_offset 
 				});
 			}	
 
@@ -115,6 +124,7 @@ $(document).ready(function(){
 	$('.slider.new_arrivals').vtSlider({
 		main_pagination: true,
 		slider: true,
+		slider_offset: true,
 		dur_time: 200
 	});
 
