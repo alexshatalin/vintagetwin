@@ -5,7 +5,7 @@
 	<div class="row">
 		<div class="col-lg-12">
 			<div data-id="mobile_nav_button" class="main_header__menu_button"><span class="fa fa-bars"></span></div>
-			<div class="main_header__logo"><img src="images/logo.png" alt="The Vintage Twin" /></div>
+			<div class="main_header__logo"><a href="/"><img src="images/logo.png" alt="The Vintage Twin" /></a></div>
 			<div class="main_header__nav">
 				<nav>
 					<ul>
@@ -70,7 +70,7 @@
 			<nav class="main_header__secondary_nav">
 				<ul>
 					<li data-id="search_content"><i class="fas fa-search"></i></li>
-					<li data-id="account_content" class="account_header">account</li>
+					<li data-id="sign_in" class="account_header">account</li>
 					<li><a href="/favorites"><i class="far fa-heart"></i></a></li>
 					<li data-id="cart_content" class="cart"><i class="fas fa-shopping-bag"></i></li>
 				</ul>
@@ -87,7 +87,7 @@
 						</label>
 					</div>
 
-					<div data-id="account_content" class="featured_section">
+					<div data-id="sign_in" class="featured_section">
 						<? require(__DIR__ . '/../components/account_fields.php'); ?>
 					</div>
 

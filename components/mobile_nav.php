@@ -102,25 +102,6 @@
 				<div class="account_section">
 					<? require(__DIR__ . '/../components/account_fields.php'); ?>
 				</div>
-				<!-- <div class="account_section">
-					<div data-id="form_title_top" class="title top">create an account</div>
-					<label>
-						<div class="title grey">email address<sup>*</sup></div>
-						<input class="field" type="email" name="email">
-					</label>
-
-					<label>
-						<div class="title grey">password<sup>*</sup></div>
-						<input class="field" type="password" name="password" minlength="8" required>
-					</label>
-					<div data-id="forgot_password" class="title grey invisible">forgot your password?</div>
-
-					<input class="submit" type="submit" value="sign in">
-				</div>
-				<ul class="bottom_links">
-					<li data-text-left="form_title_left" class="title left">already an account?</li>
-					<li data-text-right="form_title_right" class="title right">login</li>
-				</ul> -->
 			</li>
 		</ul>
 	</nav>

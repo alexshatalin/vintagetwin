@@ -1,4 +1,4 @@
-<div data-id="account_content" class="account_panel active">
+<div data-id="sign_in" class="account_panel active">
 	<div class="title black top">login</div>
 	<label class="single_label">
 		<div class="title grey">email address<sup>*</sup></div>
@@ -38,5 +38,5 @@
 	</label>
 
 	<input class="login" type="submit" value="sign up">
-	<div data-id="account_content" class="title black bottom active_link">already have an account?</div>
+	<div data-id="sign_in" class="title black bottom active_link">already have an account?</div>
 </div>

@@ -40,17 +40,10 @@
 				$('[data-id="'+ vtObj.currentElem +'"]').addClass('active');
 			}
 
-			if( vtObj.currentElem == 'create_account' && vtObj.currentLevel == 2 ) {
+			if( vtObj.currentElem != undefined && vtObj.currentLevel == 2 ) {
 				$('.mobile_nav').addClass('sign_in_opened');
-				$('.active_panel').removeClass('active');
-				$(['data-id="create_account"']).addClass('active');
-				//vtObj.createAccount();
-			}
-
-			if( vtObj.currentElem == 'sign_in' && vtObj.currentLevel == 2 ) {
-				$('.mobile_nav').addClass('sign_in_opened');
-				$('.active_panel').removeClass('active');
-				$(['data-id="account_content"']).addClass('active');
+				$('.account_panel').removeClass('active');
+				$('[data-id="'+ vtObj.currentElem +'"]').addClass('active');
 			}
 
 			if( vtObj.currentElem != undefined && vtObj.currentLevel == -2 ) {
