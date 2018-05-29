@@ -5,6 +5,10 @@
 	text-transform: uppercase;
 	letter-spacing: 0.025em;
 
+	@media (max-width: 767px) {
+		font-size: calc(18px + (38 - 18) * ((100vw - 300px) / (767 - 300)));
+	}
+
 	&.active {
 		color: white;
 	}
@@ -17,6 +21,10 @@
 		letter-spacing: 0.13em;
 		display: inline-block;
 		vertical-align: middle;
+
+		@media (max-width: 767px) {
+			font-size: calc(8px + (15 - 8) * ((100vw - 300px) / (767 - 300)));
+		}
 	}
 
 	.pointer {

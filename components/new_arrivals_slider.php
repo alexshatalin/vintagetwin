@@ -91,6 +91,71 @@
 				</a>
 			</div>
 
+			<div class="single_slide">
+				<a href="#">
+					<picture>
+					  	<img src="images/na_slide4.jpg" alt="Featured Product" />
+					</picture>
+					<div class="slide_content">
+						<div class="category">UNISEX - Lookin For Action</div>
+						<div class="product_type">Barely There Tee </div>
+						<div class="price">$ 48</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="single_slide">
+				<a href="#">
+					<picture>
+					  	<img src="images/na_slide3.jpg" alt="Featured Product" />
+					</picture>
+					<div class="slide_content">
+						<div class="category">UNISEX - Lookin For Action</div>
+						<div class="product_type">Barely There Tee </div>
+						<div class="price">$ 48</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="single_slide">
+				<a href="#">
+					<picture>
+					  	<img src="images/na_slide3.jpg" alt="Featured Product" />
+					</picture>
+					<div class="slide_content">
+						<div class="category">UNISEX - Lookin For Action</div>
+						<div class="product_type">Barely There Tee </div>
+						<div class="price">$ 48</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="single_slide">
+				<a href="#">
+					<picture>
+					  	<img src="images/na_slide3.jpg" alt="Featured Product" />
+					</picture>
+					<div class="slide_content">
+						<div class="category">UNISEX - Lookin For Action</div>
+						<div class="product_type">Barely There Tee </div>
+						<div class="price">$ 48</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="single_slide">
+				<a href="#">
+					<picture>
+					  	<img src="images/na_slide3.jpg" alt="Featured Product" />
+					</picture>
+					<div class="slide_content">
+						<div class="category">UNISEX - Lookin For Action</div>
+						<div class="product_type">Barely There Tee </div>
+						<div class="price">$ 48</div>
+					</div>
+				</a>
+			</div>
+
 		</div>
 	</div>
 </section>

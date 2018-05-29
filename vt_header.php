@@ -8,6 +8,7 @@
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.mobile.min.js"></script>
 	<script src="js/nav_menu.js"></script>
+	<!-- <script src="js/carousel.js"></script> -->
 	<script src="js/slider.js"></script>
 </head>
 <body>

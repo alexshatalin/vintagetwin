@@ -8,7 +8,11 @@
 	}
 
 	.slider_content {
-		margin: 0 -1.4em;
+		margin: 0 -0.9em;
+	}
+
+	.slider_mask {
+		margin: 0 -15.5em;
 	}
 
 	.slider_mask,.single_slide {
@@ -24,7 +28,7 @@
 	}
 
 	.single_slide {
-		margin: 0 0.7em;
+		margin: 0 0.9em;
 		height: auto;
 		width: 28.4em;
 		//width: calc(100vw / 6);
@@ -47,35 +51,46 @@
 	}
 
 	.next_button,.prev_button {
-		top: 50%;
+		top: 41%;
 		padding: 1.3em;
 	}
 
 	.next_button {
-		right: 3.9em;
+		right: 13.9em;
 		@include transform(translateY(-50%) rotate(-135deg));
 	}
 
 	.prev_button {
-		left: 3.9em;
+		left: 13.9em;
 		@include transform(translateY(-50%) rotate(45deg));
 	}
 
 	.left_overlay,.right_overlay {
+		//display: none;
 		position: absolute;
 		top: 0;
 		z-index: 10;
 		background: rgba(255,255,255,0.67);
 		height: 100%;
-		width: 14.2em;
+		width: 13.3em;
+
+		&:after {
+			@extend %block_pseudo_container;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			background: white;
+			height: 9.4em;
+			width: 100%;
+		}
 	}
 
 	.left_overlay {
-		left: 1.4em;
+		left: 0.9em;
 	}
 
 	.right_overlay {
-		right: 1.4em;
+		right: 0.9em;
 	}
 }
 
