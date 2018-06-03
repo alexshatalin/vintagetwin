@@ -71,7 +71,7 @@
 				<ul>
 					<li data-id="search_content"><i class="fas fa-search"></i></li>
 					<li data-id="sign_in" class="account_header">account</li>
-					<li><a href="/favorites"><i class="far fa-heart"></i></a></li>
+					<li><a href="/favorites.php"><i class="far fa-heart"></i></a></li>
 					<li data-id="cart_content" class="cart"><i class="fas fa-shopping-bag"></i></li>
 				</ul>
 				<div class="main_header__secondary_nav_body">
