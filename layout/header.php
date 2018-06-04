@@ -113,7 +113,7 @@
 							<div class="title black">subtotal</div>
 							<div class="title black">$ 1,795.00</div>
 							<div class="secondary_text">Items in your bag are not reserved until you complete checkout</div>
-							<button type="submit" class="checkout">checkout</button>
+							<div class="checkout"><a href="/cart.php">checkout</a></div>
 							<div class="view_my_bag"><a href="#">View my bag</a></div>
 						</div>
 					</div>

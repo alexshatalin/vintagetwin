@@ -1,0 +1,17 @@
+.secondary_hero {
+	padding: 21.1em 0;
+
+	&__content {
+		position: absolute;
+		left: 0;
+		bottom: 4.2em;
+		z-index: 9;
+	}
+
+	h1 {
+		margin: 0 0 0 1.3em;
+		@extend %text;
+		font-size: 4.6em;
+		letter-spacing: 0.13em;
+	}
+}

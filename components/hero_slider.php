@@ -4,9 +4,9 @@
 
 			<div class="single_slide">
 				<picture>
-				  	<source srcset="images/hero_slide1_m.jpg" media="(max-width: 767px)">
-				  	<source srcset="images/hero_slide1_t.jpg" media="(max-width: 1024px)">
-				  	<source srcset="images/hero_slide1.jpg" media="(min-width: 1500px)">
+				  	<!-- <source srcset="images/hero_slide1_m.jpg" media="(max-width: 767px)">
+				  	<source srcset="images/hero_slide1_t.jpg" media="(max-width: 1024px)"> -->
+				  	<source srcset="images/hero_slide1.1.jpg" media="(min-width: 1500px)">
 				  	<img src="images/hero_slide1.jpg" alt="Featured Product" />
 				</picture>
 				<div class="slide_content">
@@ -17,9 +17,9 @@
 
 			<div class="single_slide">
 				<picture>
-				  	<source srcset="images/hero_slide2_m.jpg" media="(max-width: 767px)">
-				  	<source srcset="images/hero_slide2_t.jpg" media="(max-width: 1024px)">
-				  	<source srcset="images/hero_slide2.jpg" media="(min-width: 1500px)">
+				  	<!-- <source srcset="images/hero_slide2_m.jpg" media="(max-width: 767px)">
+				  	<source srcset="images/hero_slide2_t.jpg" media="(max-width: 1024px)"> -->
+				  	<source srcset="images/hero_slide1.2.jpg" media="(min-width: 1500px)">
 				  	<img src="images/hero_slide2.jpg" alt="Featured Product" />
 				</picture>
 				<div class="slide_content">
@@ -30,9 +30,9 @@
 
 			<div class="single_slide">
 				<picture>
-				  	<source srcset="images/hero_slide3_m.jpg" media="(max-width: 767px)">
-				  	<source srcset="images/hero_slide3_t.jpg" media="(max-width: 1024px)">
-				  	<source srcset="images/hero_slide3.jpg" media="(min-width: 1500px)">
+				  	<!-- <source srcset="images/hero_slide3_m.jpg" media="(max-width: 767px)">
+				  	<source srcset="images/hero_slide3_t.jpg" media="(max-width: 1024px)"> -->
+				  	<source srcset="images/hero_slide1.3.jpg" media="(min-width: 1500px)">
 				  	<img src="images/hero_slide3.jpg" alt="Featured Product" />
 				</picture>
 				<div class="slide_content">
@@ -43,9 +43,9 @@
 
 			<div class="single_slide">
 				<picture>
-				  	<source srcset="images/hero_slide4_m.jpg" media="(max-width: 767px)">
-				  	<source srcset="images/hero_slide4_t.jpg" media="(max-width: 1024px)">
-				  	<source srcset="images/hero_slide4.jpg" media="(min-width: 1500px)">
+				  	<!-- <source srcset="images/hero_slide4_m.jpg" media="(max-width: 767px)">
+				  	<source srcset="images/hero_slide4_t.jpg" media="(max-width: 1024px)"> -->
+				  	<source srcset="images/hero_slide1.4.jpg" media="(min-width: 1500px)">
 				  	<img src="images/hero_slide4.jpg" alt="Featured Product" />
 				</picture>
 				<div class="slide_content">

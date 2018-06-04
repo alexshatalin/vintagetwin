@@ -51,3 +51,19 @@
 	}
 }
 
+%checkout {
+	background: black;
+	color: white;
+	font-size: 1.2em;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.1em;
+	cursor: pointer;
+
+	a {
+		padding: 1em 0;
+		display: block;
+	}
+}
+

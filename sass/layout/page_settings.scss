@@ -1,7 +1,8 @@
 .page_container {
 	&.remove_promo_bar {
 		@media screen and (min-width: 1025px) {
-			padding-top: rem(140);
+			padding-top: 2.5rem;
+			//padding-top: rem(140);
 		}
 
 		// @media screen and (max-width: 1374px) {
@@ -9,7 +10,7 @@
 		// }	
 
 		@media screen and (max-width: 1074px) {
-			padding-top: rem(63);
+			//padding-top: rem(63);
 		}			
 
 
