@@ -1,0 +1,78 @@
+.category {
+	padding: 4.1em 0;
+
+	&__filter_section {
+		margin: 0 0 0 1em;
+		display: inline-block;
+
+	}
+
+	&__page_hierarchy_list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		li {
+			margin: 0 1em 0 0;
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 1.4em;
+			letter-spacing: 0.1em;
+			text-transform: uppercase; 
+
+			&:last-of-type {
+				&:after {
+					display: none;
+				}
+			}
+
+			&:after {
+				margin: 0 0 0 0.8em;
+				content: '|';
+				display: inline-block;
+				@include transform(rotate(-24deg));
+			}
+
+			&.highlight {
+				color: $categoury_highlight_color;
+			}
+		}
+	}
+
+	&__page_description_list {
+
+		dl {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+
+		dt {
+
+			font-size: 2.4em;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		dd {
+			margin: 0;
+			font-size: 1.6em;
+			text-transform: uppercase; 
+
+			&.opened {
+				font-weight: 900;
+
+				ul {
+					display: block;
+				}
+			}
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			display: none;
+		}
+	}
+}

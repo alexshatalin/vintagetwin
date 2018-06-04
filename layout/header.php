@@ -14,52 +14,52 @@
 								<li>
 									<dl>
 										<dt>unisex</dt>
-										<dd><a href="#">t-shirts</a></dd>
-										<dd><a href="#">sweatshirts</a></dd>
-										<dd><a href="#">button downs</a></dd>
-										<dd><a href="#">sweaters</a></dd>
-										<dd><a href="#">jackets + coats</a></dd>
-										<dd><a href="#">pants</a></dd>
+										<dd><a href="/category.php">t-shirts</a></dd>
+										<dd><a href="/category.php">sweatshirts</a></dd>
+										<dd><a href="/category.php">button downs</a></dd>
+										<dd><a href="/category.php">sweaters</a></dd>
+										<dd><a href="/category.php">jackets + coats</a></dd>
+										<dd><a href="/category.php">pants</a></dd>
 									</dl>
 								</li>
 								<li>
 									<dl>
 										<dt>more</dt>
-										<dd><a href="#">dresses</a></dd>
-										<dd><a href="#">jumpsuits + rompers</a></dd>
-										<dd><a href="#">skirts</a></dd>
-										<dd><a href="#">blouses</a></dd>
-										<dd><a href="#">cropped sweaters</a></dd>
-										<dd><a href="#">reworked sweatshirts</a></dd>
+										<dd><a href="/category.php">dresses</a></dd>
+										<dd><a href="/category.php">jumpsuits + rompers</a></dd>
+										<dd><a href="/category.php">skirts</a></dd>
+										<dd><a href="/category.php">blouses</a></dd>
+										<dd><a href="/category.php">cropped sweaters</a></dd>
+										<dd><a href="/category.php">reworked sweatshirts</a></dd>
 									</dl>
 								</li>
 							</ul>
 						</li>
 						<li><a href="#">accessories</a>
 							<ul class="submenu accessories">
-								<li><a href="#">belts</a></li>
-								<li><a href="#">jewelry</a></li>
-								<li><a href="#">sunglasses + readers</a></li>
-								<li><a href="#">pins + patches</a></li>
+								<li><a href="/category.php">belts</a></li>
+								<li><a href="/category.php">jewelry</a></li>
+								<li><a href="/category.php">sunglasses + readers</a></li>
+								<li><a href="/category.php">pins + patches</a></li>
 							</ul>
 						</li>
 						<li><a href="#">home</a>
 							<ul class="submenu home">
-								<li><a href="#">lighting</a></li>
-								<li><a href="#">storage</a></li>
-								<li><a href="#">art + decor</a></li>
-								<li><a href="#">kitchen</a></li>
-								<li><a href="#">vinyl</a></li>
+								<li><a href="/category.php">lighting</a></li>
+								<li><a href="/category.php">storage</a></li>
+								<li><a href="/category.php">art + decor</a></li>
+								<li><a href="/category.php">kitchen</a></li>
+								<li><a href="/category.php">vinyl</a></li>
 							</ul>
 						</li>
 						<li><a href="#">trending</a>
 							<ul class="submenu trending">
-								<li><a href="#">band tees</a></li>
-								<li><a href="#">basics</a></li>
-								<li><a href="#">champion</a></li>
-								<li><a href="#">adidas</a></li>
-								<li><a href="#">reworked</a></li>
-								<li><a href="#">harley</a></li>
+								<li><a href="/category.php">band tees</a></li>
+								<li><a href="/category.php">basics</a></li>
+								<li><a href="/category.php">champion</a></li>
+								<li><a href="/category.php">adidas</a></li>
+								<li><a href="/category.php">reworked</a></li>
+								<li><a href="/category.php">harley</a></li>
 							</ul>
 						</li>
 						<li><a href="#">the vault</a></li>
