@@ -112,7 +112,7 @@
 }
 
 .subscribe_container {
-	margin: 10.2em 0 8em;
+	padding: 10.2em 0 8em;
 
 	.text {
 		@extend %text;
@@ -150,6 +150,33 @@
 	}
 }	
 
+.scroll_top_button {
+  position: absolute;
+  right: 0;
+  @extend %vertical_align_middle;
+  z-index: 12;
+  cursor: pointer;
+
+  span {
+    display: block;
+    padding: 1em;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    @include transform(rotate(-45deg));
+   
+  }
+
+  &:after {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    text-align: center;
+    content: 'TOP';
+    display: block;
+  }
+
+}
 
 //////////////////////////////////////
 .carousel {

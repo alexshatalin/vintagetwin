@@ -1,0 +1,82 @@
+.secondary_list,&__filter_body_content {
+  .category__filter_title,.product_filter_checkbox,.category_filter_checkbox {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  label {
+    cursor: pointer;
+
+    &:hover {
+
+      span {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+.product_filter_checkbox {
+  width: 18px;
+  height: 18px;
+  border: 1px solid $category_filter_checkbox_border;
+  background: white;
+  @extend %fix_webkit_flash_bug_part_three;
+
+  span {
+    position: absolute;
+    @extend %centered_align;
+    background: black;
+    padding: 3px;
+    cursor: pointer;
+    opacity: 0;
+  }
+
+  input[type="checkbox"] {
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    &:checked + span {
+      opacity: 1;
+    }   
+  } 
+}
+
+.category_filter_checkbox {
+  width: 23px;
+  height: 23px;
+  border: 1px solid $category_filter_checkbox_border;
+  @extend %fix_webkit_flash_bug_part_three;
+
+  span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 4px solid black;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    opacity: 0;
+  }
+
+  input[type="checkbox"] {
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    &:checked + span {
+      opacity: 1;
+    }   
+  } 
+}
+
+&__price,&__size,&__sort_by {
+  .category_filter_checkbox {
+    height: 1.2em;
+    width: 1.2em;  
+    
+    span {
+      border: none;
+      background: black;
+    } 
+  }
+}
