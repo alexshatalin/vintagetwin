@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.mobile.min.js"></script>
+	<script src="js/isotope.js"></script>
 	<script src="js/nav_menu.js"></script>
 	<script src="js/category.js"></script>
 	<!-- <script src="js/carousel.js"></script> -->
