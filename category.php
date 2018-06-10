@@ -19,14 +19,14 @@
 					<li><a href="/unisex.php">unisex</a>
 					<li class="highlight"><a href="/sweatshirts.php">sweatshirts</a></li>
 				</ul>
-				<div class="col-sm-offset-3 col-sm-9 col-md-9 col-lg-9 category_filter_container">
+				<div class="col-md-offset-3 col-sm-12 col-md-9 col-lg-9 category_filter_container">
 					<div data-id="category_filter_button" class="category__filter_button">refine + sort</div>
 					<div class="category__filter_body">
 						<div data-id="category_filter_button" class="close_button"></div>
 						<div class="reset_all_button">reset all</div>
 						<div class="category__filter_body_content">
 							<div class="row">
-								<div data-category="color" class="col-sm-3 col-md-3 col-lg-3 category__color">
+								<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 category__color">
 									<div class="title">color</div>
 									<ul>
 										<li>
@@ -171,7 +171,7 @@
 
 									</ul>
 								</div>
-								<div data-category="price" class="col-sm-3 col-md-3 col-lg-3 category__price">
+								<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 category__price">
 									<div class="title">price</div>
 									<ul>
 										<li>
@@ -235,7 +235,7 @@
 										</li>
 									</ul>
 								</div>
-								<div data-category="size" class="col-sm-3 col-md-3 col-lg-3 category__size">
+								<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 category__size">
 									<div class="title">size</div>
 									<ul>
 										<li>
@@ -289,7 +289,7 @@
 										</li>
 									</ul>
 								</div>
-								<div data-category="sort_by" class="col-sm-3 col-md-3 col-lg-3 category__sort_by">
+								<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 category__sort_by">
 									<div class="title">sort by</div>
 									<ul>
 										<li>
@@ -334,6 +334,10 @@
 
 									</ul>
 								</div>
+								<div class="col-xs-12 col-sm-12 category__main_mobile_filter">
+									<div class="title">category</div>
+									<?php require(__DIR__ . '/components/category_filter_list.php'); ?>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -341,104 +345,13 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-3 col-md-3 col-lg-3">
+			<div class="col-sm-3 col-md-3 col-lg-3 main_filter">
 				<div class="category__page_description_list">
 					<dl>
 						<dt data-id="category_description_item">unisex</dt>
 						<dd data-id="category_description_item">t-shirts</dd>
 						<dd data-id="category_description_item" class="opened">sweatshirts
-							<ul class="secondary_list">
-								<li>
-									<label>
-										<div class="product_filter_checkbox">
-											<input type="checkbox" name="brands_logos">
-											<span></span>
-										</div>
-										<div class="category__filter_title">Brands + Logos</div>
-									</label>
-								</li>
-
-								<li>
-									<label>
-										<div class="product_filter_checkbox">
-											<input type="checkbox" name="colleges">
-											<span></span>
-										</div>
-										<div class="category__filter_title">Colleges</div>
-									</label>
-								</li>
-
-								<li>
-									<label>
-										<div class="product_filter_checkbox">
-											<input type="checkbox" name="pro_sports">
-											<span></span>
-										</div>
-										<div class="category__filter_title">Pro Sports</div>
-									</label>
-								</li>
-
-								<li>
-									<label>
-										<div class="product_filter_checkbox">
-											<input type="checkbox" name="cartoons">
-											<span></span>
-										</div>
-										<div class="category__filter_title">Cartoons</div>
-									</label>
-								</li>
-
-								<li>
-									<label>
-										<div class="product_filter_checkbox">
-											<input type="checkbox" name="stripes_patterns">
-											<span></span>
-										</div>
-										<div class="category__filter_title">Stripes Patterns</div>
-									</label>
-								</li>
-
-								<li>
-									<label>
-										<div class="product_filter_checkbox">
-											<input type="checkbox" name="reworked">
-											<span></span>
-										</div>
-										<div class="category__filter_title">Reworked</div>
-									</label>
-								</li>
-
-								<li>
-									<label>
-										<div class="product_filter_checkbox">
-											<input type="checkbox" name="barely_there">
-											<span></span>
-										</div>
-										<div class="category__filter_title">Barely There</div>
-									</label>
-								</li>
-
-								<li>
-									<label>
-										<div class="product_filter_checkbox">
-											<input type="checkbox" name="original_prints">
-											<span></span>
-										</div>
-										<div class="category__filter_title">Original Prints</div>
-									</label>
-								</li>
-
-								<li>
-									<label>
-										<div class="product_filter_checkbox">
-											<input type="checkbox" name="other">
-											<span></span>
-										</div>
-										<div class="category__filter_title">Other</div>
-									</label>
-								</li>
-
-							</ul>
+							<?php require(__DIR__ . '/components/category_filter_list.php'); ?>
 						</dd>
 						<dd data-id="category_description_item">button downs</dd>
 						<dd data-id="category_description_item">sweaters</dd>
@@ -456,9 +369,9 @@
 					</dl>
 				</div>
 			</div>
-			<div class="col-sm-9 col-md-9 col-lg-9">
+			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
 				<div class="row grid">
-					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_black">
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_black">
 						<a href="#">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
@@ -470,7 +383,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_blue">
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_blue original_prints">
 						<a href="#"> 
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
@@ -482,7 +395,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_black">
+					<div class="col-xs-6 col-sm-4  col-md-3 col-lg-3 grid_item color_black brands_logos original_prints">
 						<a href="#">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
@@ -494,56 +407,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_orange">
-						<a href="#">
-							<picture>
-							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
-							</picture>
-							<div class="slide_content">
-								<div class="slide_category">UNISEX - Lookin For Action</div>
-								<div class="product_type">Barely There Tee </div>
-								<div class="price">$ 48</div>
-							</div>
-						</a>
-					</div>
-
-					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_green">
-						<a href="#">
-							<picture>
-							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
-							</picture>
-							<div class="slide_content">
-								<div class="slide_category">UNISEX - Lookin For Action</div>
-								<div class="product_type">Barely There Tee </div>
-								<div class="price">$ 48</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_blue">
-						<a href="#">
-							<picture>
-							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
-							</picture>
-							<div class="slide_content">
-								<div class="slide_category">UNISEX - Lookin For Action</div>
-								<div class="product_type">Barely There Tee </div>
-								<div class="price">$ 48</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_white">
-						<a href="#">
-							<picture>
-							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
-							</picture>
-							<div class="slide_content">
-								<div class="slide_category">UNISEX - Lookin For Action</div>
-								<div class="product_type">Barely There Tee </div>
-								<div class="price">$ 48</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_blue">
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_orange brands_logos colleges">
 						<a href="#">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
@@ -556,7 +420,7 @@
 						</a>
 					</div>
 
-					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_black">
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_green colleges">
 						<a href="#">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
@@ -568,7 +432,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_orange">
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_blue stripes_patterns">
 						<a href="#">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
@@ -580,7 +444,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_white">
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_white">
 						<a href="#">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
@@ -592,7 +456,56 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_black">
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_blue">
+						<a href="#">
+							<picture>
+							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
+							</picture>
+							<div class="slide_content">
+								<div class="slide_category">UNISEX - Lookin For Action</div>
+								<div class="product_type">Barely There Tee </div>
+								<div class="price">$ 48</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_black">
+						<a href="#">
+							<picture>
+							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
+							</picture>
+							<div class="slide_content">
+								<div class="slide_category">UNISEX - Lookin For Action</div>
+								<div class="product_type">Barely There Tee </div>
+								<div class="price">$ 48</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_orange">
+						<a href="#">
+							<picture>
+							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
+							</picture>
+							<div class="slide_content">
+								<div class="slide_category">UNISEX - Lookin For Action</div>
+								<div class="product_type">Barely There Tee </div>
+								<div class="price">$ 48</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_white">
+						<a href="#">
+							<picture>
+							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
+							</picture>
+							<div class="slide_content">
+								<div class="slide_category">UNISEX - Lookin For Action</div>
+								<div class="product_type">Barely There Tee </div>
+								<div class="price">$ 48</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_black">
 						<a href="#">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />

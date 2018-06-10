@@ -70,7 +70,7 @@
   } 
 }
 
-&__price,&__size,&__sort_by {
+&__price,&__size,&__sort_by,&__main_mobile_filter {
   .category_filter_checkbox {
     height: 1.2em;
     width: 1.2em;  
@@ -79,5 +79,25 @@
       border: none;
       background: black;
     } 
+  }
+}
+
+&__main_mobile_filter {
+  .product_filter_checkbox {
+      height: 1.2em;
+      width: 1.2em;
+  }
+
+  .category__filter_title {
+    font-size: 1.5em;
+    text-transform: capitalize;
+  }
+
+  span {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    @include transform(translateX(0) translateY(0));
   }
 }

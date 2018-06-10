@@ -1,6 +1,10 @@
 .category {
 	padding: 3.1em 0 0;
 
+	img {
+		width: 100%;
+	}
+
 	&__filter_section {
 		margin: 0 0 2.4em 1em;
 
@@ -85,6 +89,11 @@
 			.category__filter_title {
 				font-size: 1.5em;
 				text-transform: capitalize;
+
+				@media (min-width: 1025px) 
+   				and (max-width: 1499px) {
+   					font-size: calc(12px + (15 - 12) * ((100vw - 1025px) / (1499 - 1025)));
+   				}
 			}
 	}
 
@@ -210,4 +219,21 @@
 		}
 	}
 
+	&__main_mobile_filter {
+		display: none;
+	}
+
+	@media (max-width: 1024px) {
+		.container {
+			width: 100%;
+		}
+
+		.main_filter {
+			display: none;
+		}
+
+		&__main_mobile_filter {
+			display: block;
+		}
+	}
 }

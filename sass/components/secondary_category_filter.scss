@@ -8,6 +8,10 @@
 	width: 100%;
 	display: none;
 
+	@media (max-width: 1024px) { 
+		width: calc(100% - 20px);
+	}
+
 	&.opened {
 		display: block;
 	}
@@ -74,6 +78,11 @@
 		margin: 0 0 1.6em;
 		display: inline-block;
 		width: 40.7%;
+
+		@media (min-width: 1025px) 
+		and (max-width: 1499px) {
+			width: 49%;
+		}
 	}
 
 	.black {
@@ -133,7 +142,7 @@
 	}
 }
 
-&__price,&__size,&__sort_by {
+&__price,&__size,&__sort_by,&__main_mobile_filter {
 
 	.category__filter_title {
 		margin: 0em 0 0 1.2em;
