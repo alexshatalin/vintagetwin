@@ -5,6 +5,13 @@
 		width: 100%;
 	}
 
+	@media (min-width: 1025px) 
+	   and (max-width: 1499px) {
+	  .container {
+	    width: 100%;
+	  }
+	}
+
 	&__filter_section {
 		margin: 0 0 2.4em 1em;
 

@@ -13,7 +13,7 @@
 <section class="cart_info">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-7">
+			<div class="col-md-7 col-lg-7">
 				<div class="cart_info__title_container">
 					<h2>Items in your bag are not reserved until you cOmplete checkout</h2>
 					<div class="print_button"><i class="fas fa-print"></i> print</div>
@@ -41,7 +41,7 @@
 					
 				</div>
 			</div>
-			<div class="col-lg-5">
+			<div class="col-md-5 col-lg-5">
 				<div class="cart_info__order_summary">
 					<div class="table_title">order summary</div>
 					<div class="table_row">
