@@ -19,20 +19,20 @@
 					<li><a href="/unisex.php">unisex</a>
 					<li class="highlight"><a href="/sweatshirts.php">sweatshirts</a></li>
 				</ul>
-				<div class="col-lg-offset-3 col-lg-9">
+				<div class="col-sm-offset-3 col-sm-9 col-md-9 col-lg-9 category_filter_container">
 					<div data-id="category_filter_button" class="category__filter_button">refine + sort</div>
 					<div class="category__filter_body">
 						<div data-id="category_filter_button" class="close_button"></div>
 						<div class="reset_all_button">reset all</div>
 						<div class="category__filter_body_content">
 							<div class="row">
-								<div data-category="color" class="col-lg-3 category__color">
+								<div data-category="color" class="col-sm-3 col-md-3 col-lg-3 category__color">
 									<div class="title">color</div>
 									<ul>
 										<li>
-											<label data-filter="black">
+											<label>
 												<div class="category_filter_checkbox black">
-													<input type="checkbox" name="black">
+													<input type="checkbox" name="black" value=".color_black">
 													<span></span>
 												</div>
 												<div class="category__filter_title">black</div>
@@ -42,7 +42,7 @@
 										<li>
 											<label data-filter="purple">
 												<div class="category_filter_checkbox purple">
-													<input type="checkbox" name="purple">
+													<input type="checkbox" name="purple" value=".color_purple">
 													<span></span>
 												</div>
 												<div class="category__filter_title">purple</div>
@@ -52,7 +52,7 @@
 										<li>
 											<label data-filter="grey">
 												<div class="category_filter_checkbox grey">
-													<input type="checkbox" name="grey">
+													<input type="checkbox" name="grey" value=".color_grey">
 													<span></span>
 												</div>
 												<div class="category__filter_title">grey</div>
@@ -62,7 +62,7 @@
 										<li>
 											<label data-filter="blue">
 												<div class="category_filter_checkbox blue">
-													<input type="checkbox" name="blue">
+													<input type="checkbox" name="blue" value=".color_blue">
 													<span></span>
 												</div>
 												<div class="category__filter_title">blue</div>
@@ -72,7 +72,7 @@
 										<li>
 											<label data-filter="white">
 												<div class="category_filter_checkbox white">
-													<input type="checkbox" name="white">
+													<input type="checkbox" name="white" value=".color_white">
 													<span></span>
 												</div>
 												<div class="category__filter_title">white</div>
@@ -82,7 +82,7 @@
 										<li>
 											<label data-filter="green">
 												<div class="category_filter_checkbox green">
-													<input type="checkbox" name="green">
+													<input type="checkbox" name="green" value=".color_green">
 													<span></span>
 												</div>
 												<div class="category__filter_title">green</div>
@@ -92,7 +92,7 @@
 										<li>
 											<label data-filter="gold">
 												<div class="category_filter_checkbox gold">
-													<input type="checkbox" name="gold">
+													<input type="checkbox" name="gold" value=".color_gold">
 													<span></span>
 												</div>
 												<div class="category__filter_title">gold</div>
@@ -102,7 +102,7 @@
 										<li>
 											<label data-filter="yellow">
 												<div class="category_filter_checkbox yellow">
-													<input type="checkbox" name="yellow">
+													<input type="checkbox" name="yellow" value=".color_yellow">
 													<span></span>
 												</div>
 												<div class="category__filter_title">yellow</div>
@@ -112,7 +112,7 @@
 										<li>
 											<label data-filter="beige">
 												<div class="category_filter_checkbox beige">
-													<input type="checkbox" name="beige">
+													<input type="checkbox" name="beige" value=".color_beige">
 													<span></span>
 												</div>
 												<div class="category__filter_title">beige</div>
@@ -122,7 +122,7 @@
 										<li>
 											<label data-filter="orange">
 												<div class="category_filter_checkbox orange">
-													<input type="checkbox" name="orange">
+													<input type="checkbox" name="orange" value=".color_orange">
 													<span></span>
 												</div>
 												<div class="category__filter_title">orange</div>
@@ -132,7 +132,7 @@
 										<li>
 											<label data-filter="brown">
 												<div class="category_filter_checkbox brown">
-													<input type="checkbox" name="brown">
+													<input type="checkbox" name="brown" value=".color_brown">
 													<span></span>
 												</div>
 												<div class="category__filter_title">brown</div>
@@ -142,7 +142,7 @@
 										<li>
 											<label data-filter="pink">
 												<div class="category_filter_checkbox pink">
-													<input type="checkbox" name="pink">
+													<input type="checkbox" name="pink" value=".color_pink">
 													<span></span>
 												</div>
 												<div class="category__filter_title">pink</div>
@@ -152,7 +152,7 @@
 										<li>
 											<label data-filter="silver">
 												<div class="category_filter_checkbox silver">
-													<input type="checkbox" name="silver">
+													<input type="checkbox" name="silver" value=".color_silver">
 													<span></span>
 												</div>
 												<div class="category__filter_title">silver</div>
@@ -162,7 +162,7 @@
 										<li>
 											<label data-filter="red">
 												<div class="category_filter_checkbox red">
-													<input type="checkbox" name="red">
+													<input type="checkbox" name="red" value=".color_red">
 													<span></span>
 												</div>
 												<div class="category__filter_title">red</div>
@@ -171,7 +171,7 @@
 
 									</ul>
 								</div>
-								<div data-category="price" class="col-lg-3 category__price">
+								<div data-category="price" class="col-sm-3 col-md-3 col-lg-3 category__price">
 									<div class="title">price</div>
 									<ul>
 										<li>
@@ -235,7 +235,7 @@
 										</li>
 									</ul>
 								</div>
-								<div data-category="size" class="col-lg-3 category__size">
+								<div data-category="size" class="col-sm-3 col-md-3 col-lg-3 category__size">
 									<div class="title">size</div>
 									<ul>
 										<li>
@@ -289,7 +289,7 @@
 										</li>
 									</ul>
 								</div>
-								<div data-category="sort_by" class="col-lg-3 category__sort_by">
+								<div data-category="sort_by" class="col-sm-3 col-md-3 col-lg-3 category__sort_by">
 									<div class="title">sort by</div>
 									<ul>
 										<li>
@@ -341,7 +341,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-3">
+			<div class="col-sm-3 col-md-3 col-lg-3">
 				<div class="category__page_description_list">
 					<dl>
 						<dt data-id="category_description_item">unisex</dt>
@@ -456,9 +456,9 @@
 					</dl>
 				</div>
 			</div>
-			<div class="col-lg-9">
+			<div class="col-sm-9 col-md-9 col-lg-9">
 				<div class="row grid">
-					<div data-filter="green" class="col-lg-3 grid_item">
+					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_black">
 						<a href="#">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
@@ -470,7 +470,7 @@
 							</div>
 						</a>
 					</div>
-					<div data-filter="blue" class="col-lg-3 grid_item">
+					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_blue">
 						<a href="#"> 
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
@@ -482,7 +482,7 @@
 							</div>
 						</a>
 					</div>
-					<div data-filter="black" class="col-lg-3 grid_item">
+					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_black">
 						<a href="#">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
@@ -494,56 +494,7 @@
 							</div>
 						</a>
 					</div>
-					<div data-filter="orange" class="col-lg-3 grid_item">
-						<a href="#">
-							<picture>
-							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
-							</picture>
-							<div class="slide_content">
-								<div class="slide_category">UNISEX - Lookin For Action</div>
-								<div class="product_type">Barely There Tee </div>
-								<div class="price">$ 48</div>
-							</div>
-						</a>
-					</div>
-
-					<div data-filter="green" class="col-lg-3 grid_item">
-						<a href="#">
-							<picture>
-							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
-							</picture>
-							<div class="slide_content">
-								<div class="slide_category">UNISEX - Lookin For Action</div>
-								<div class="product_type">Barely There Tee </div>
-								<div class="price">$ 48</div>
-							</div>
-						</a>
-					</div>
-					<div data-filter="blue" class="col-lg-3 grid_item">
-						<a href="#">
-							<picture>
-							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
-							</picture>
-							<div class="slide_content">
-								<div class="slide_category">UNISEX - Lookin For Action</div>
-								<div class="product_type">Barely There Tee </div>
-								<div class="price">$ 48</div>
-							</div>
-						</a>
-					</div>
-					<div data-filter="white" class="col-lg-3 grid_item">
-						<a href="#">
-							<picture>
-							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
-							</picture>
-							<div class="slide_content">
-								<div class="slide_category">UNISEX - Lookin For Action</div>
-								<div class="product_type">Barely There Tee </div>
-								<div class="price">$ 48</div>
-							</div>
-						</a>
-					</div>
-					<div data-filter="blue" class="col-lg-3 grid_item">
+					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_orange">
 						<a href="#">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
@@ -556,7 +507,7 @@
 						</a>
 					</div>
 
-					<div data-filter="black" class="col-lg-3 grid_item">
+					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_green">
 						<a href="#">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
@@ -568,7 +519,7 @@
 							</div>
 						</a>
 					</div>
-					<div data-filter="orange" class="col-lg-3 grid_item">
+					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_blue">
 						<a href="#">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
@@ -580,7 +531,7 @@
 							</div>
 						</a>
 					</div>
-					<div data-filter="white" class="col-lg-3 grid_item">
+					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_white">
 						<a href="#">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
@@ -592,7 +543,56 @@
 							</div>
 						</a>
 					</div>
-					<div data-filter="black" class="col-lg-3 grid_item">
+					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_blue">
+						<a href="#">
+							<picture>
+							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
+							</picture>
+							<div class="slide_content">
+								<div class="slide_category">UNISEX - Lookin For Action</div>
+								<div class="product_type">Barely There Tee </div>
+								<div class="price">$ 48</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_black">
+						<a href="#">
+							<picture>
+							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
+							</picture>
+							<div class="slide_content">
+								<div class="slide_category">UNISEX - Lookin For Action</div>
+								<div class="product_type">Barely There Tee </div>
+								<div class="price">$ 48</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_orange">
+						<a href="#">
+							<picture>
+							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
+							</picture>
+							<div class="slide_content">
+								<div class="slide_category">UNISEX - Lookin For Action</div>
+								<div class="product_type">Barely There Tee </div>
+								<div class="price">$ 48</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_white">
+						<a href="#">
+							<picture>
+							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
+							</picture>
+							<div class="slide_content">
+								<div class="slide_category">UNISEX - Lookin For Action</div>
+								<div class="product_type">Barely There Tee </div>
+								<div class="price">$ 48</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-sm-3 col-md-3 col-lg-3 grid_item color_black">
 						<a href="#">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
