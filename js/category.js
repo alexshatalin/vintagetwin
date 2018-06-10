@@ -3,7 +3,7 @@ $(document).ready(function(){
 		$grid = $('.grid').isotope({
 		  itemSelector: '.grid_item',
 		  sortBy: 'random',
-		  layoutMode: 'fitRows'
+		  layoutMode: 'masonry',
 		});
 
 	$('body').on('click touchstart', '.category_filter_container', function(e){
