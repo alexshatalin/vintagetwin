@@ -33,6 +33,16 @@
 		border-left: 3px solid black;
 		border-bottom: 3px solid black;
 		cursor: pointer;
+		
+		&.first {
+			border-left: 3px solid $slider_inactive_pagination_color;
+			border-bottom: 3px solid $slider_inactive_pagination_color;
+		}	
+
+		&.last {
+			border-left: 3px solid $slider_inactive_pagination_color;
+			border-bottom: 3px solid $slider_inactive_pagination_color;
+		}
 	}
 }
 

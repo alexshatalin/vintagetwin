@@ -282,8 +282,12 @@
 	text-align: center;
 }
 
-.cart_favorites {
+.cart_favorites,.cart_recently_viewed {
 	.section_title {
 		@extend %section_title;
 	}
+}
+
+.cart_recently_viewed {
+	margin: 5em 0;
 }

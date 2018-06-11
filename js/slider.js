@@ -109,12 +109,12 @@
 				} else {
 					if (slide_index > num_of_slides - opts.itemes_displayed ) {
 						slide_index = num_of_slides - opts.itemes_displayed;
-					}
+						
+					} 
 
 					if (slide_index < 0) {
 						slide_index = 0;
 					}
-					
 
 					if (n) {
 						set_animation(function () {
@@ -123,8 +123,6 @@
 							},opts.dur_time);
 						});
 					}
-
-					
 				} 
 			}
 
@@ -159,4 +157,20 @@ $(document).ready(function(){
 		itemes_displayed: 4,
 		dur_time: 200
 	});
+
+	$('.slider.cart_favorites').vtSlider({
+		main_pagination: true,
+		slider: true,
+		itemes_displayed: 5,
+		dur_time: 200
+	});
+
+	$('.slider.recently_viewed').vtSlider({
+		main_pagination: true,
+		slider: true,
+		itemes_displayed: 1,
+		dur_time: 500
+	});
+
+	
 });

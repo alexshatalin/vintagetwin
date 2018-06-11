@@ -37,8 +37,6 @@
 							</ul>
 						</div>
 					</div>
-
-					
 				</div>
 			</div>
 			<div class="col-md-5 col-lg-5">
@@ -79,7 +77,18 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="section_title">favorites</div>
-				
+				<?php require_once(__DIR__ . '/components/cart_favorites_slider.php'); ?>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="cart_recently_viewed">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="section_title">recently viewed</div>
+				<?php require_once(__DIR__ . '/components/cart_recently_viewed_slider.php'); ?>
 			</div>
 		</div>
 	</div>
