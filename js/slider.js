@@ -149,14 +149,14 @@ $(document).ready(function(){
 	$('.slider.new_arrivals').vtSlider({
 		main_pagination: true,
 		slider: true,
-		slider_offset: true,
 		itemes_displayed: 6,
 		dur_time: 200
 	});
 
-	$('.slider.homepage_bottom_slider').vtSlider({
+	$('.slider.instagram_slider').vtSlider({
 		main_pagination: true,
 		slider: true,
+		itemes_displayed: 4,
 		dur_time: 200
 	});
 });

@@ -1,4 +1,4 @@
-<section data-id="slider" class="slider homepage_bottom_slider">
+<section data-id="slider" class="slider instagram_slider">
 	<div class="section_content">
 		<div class="container">
 			<div class="row">
