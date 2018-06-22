@@ -58,20 +58,19 @@
 			e.stopPropagation();
 			let currentElem = $(e.target).attr('data-id'),
 				currentDataRole = $(e.target).attr('data-role');	
-				console.log('works');
 
-			if( currentElem != undefined && currentDataRole != 'secondary' ) {
+			if( typeof currentElem != 'undefined' && currentDataRole != 'secondary' ) {
 				$('.main_header__secondary_nav_body').addClass('opened');
-				$('.main_header__secondary_nav li,.main_header__secondary_nav .featured_section,.account_panel').removeClass('active');
-				$('[data-id="'+ currentElem +'"]').addClass('active');
-			} 
+				$('.main_header__secondary_nav li,.main_header__secondary_nav .featured_section').not($('[data-id="' + currentElem + '"]')).removeClass('active');
+				$('[data-id="'+ currentElem +'"]').toggleClass('active');
+				$('.main_header__secondary_nav_body input,.main_header__secondary_nav_body input[type="email"]').focus();
+				
+			}
 
-			if( currentElem != undefined && currentDataRole == 'secondary' ) {
+			if( typeof currentElem != 'undefined' && currentDataRole == 'secondary' ) {
 				$('.account_panel').removeClass('active');
 				$('.account_panel[data-id="'+ currentElem +'"]').addClass('active');
 			}
-
-			
 
 		}).on('click touchstart', function(){
 			if( false == vtObj.menuOpen ) {
@@ -99,11 +98,11 @@
 		//console.log($(window).scrollTop());
 		if( $(window).scrollTop() > vtObj.headerHeight && vtObj.scrollState != 1 ){
 			$('.page_container').addClass('remove_promo_bar');
-			console.log('hide');
+			//console.log('hide');
 			vtObj.scrollState = 1;
 		} else if( $(window).scrollTop() < vtObj.headerHeight ) {
 			$('.page_container').removeClass('remove_promo_bar');
-			console.log('show');
+			//console.log('show');
 			vtObj.scrollState = 0;
 		}
 	});
@@ -140,7 +139,7 @@
 
 	vtObj.removeSecondaryNav = function(e) {
 		$('.main_header__secondary_nav_body').removeClass('opened');
-		$('.main_header__secondary_nav li,.main_header__secondary_nav .featured_section,.account_panel').removeClass('active');
+		$('.main_header__secondary_nav li,.main_header__secondary_nav .featured_section').removeClass('active');
 		
 	};
 	// vtObj.delayMobileFormChanges = function(callback) {

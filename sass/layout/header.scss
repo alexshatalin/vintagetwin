@@ -109,7 +109,7 @@ $desktop_promobar_height: rem(40);
 			z-index: 4;
 			margin: 0;
 			padding: 1.3em 1.6em;
-			background: white;
+			background: rgba(255,255,255,0.8);
 			display: none;
 			
 			&.clothing {

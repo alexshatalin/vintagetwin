@@ -70,7 +70,7 @@
 			<nav class="main_header__secondary_nav">
 				<ul>
 					<li data-id="search_content"><i class="fas fa-search"></i></li>
-					<li data-id="sign_in" class="account_header">account</li>
+					<li data-id="sign_in_account" class="account_header">account</li>
 					<li><a href="/favorites.php"><i class="far fa-heart"></i></a></li>
 					<li data-id="cart_content" class="cart"><i class="fas fa-shopping-bag"></i></li>
 				</ul>
@@ -87,7 +87,7 @@
 						</label>
 					</div>
 
-					<div data-id="sign_in" class="featured_section">
+					<div data-id="sign_in_account" class="featured_section">
 						<? require(__DIR__ . '/../components/account_fields.php'); ?>
 					</div>
 
