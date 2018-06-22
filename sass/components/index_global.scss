@@ -152,7 +152,7 @@
 
 .scroll_top_button {
   position: absolute;
-  right: 0;
+  right: 15px;
   @extend %vertical_align_middle;
   z-index: 12;
   cursor: pointer;

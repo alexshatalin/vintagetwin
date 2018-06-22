@@ -1,0 +1,82 @@
+.favorites {
+
+	&__hero {
+		padding: 6.3em 0 4.2em;
+		background: $favorites_hero_bg;
+		text-align: center;	
+
+		h1 {
+			margin: 0 0 0.3em;
+			font-size: 3.9em;
+			font-weight: 300;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			line-height: 1;
+		}
+
+		p {
+			margin: 0;
+			font-size: 1.8em;
+			line-height: 1.8;
+			word-spacing: 0.1em;
+		}
+
+		i {
+			margin: 0 0.3em;
+			display: inline-block;
+			color: $favorites_red;
+		}
+	}
+
+	&__search_results {
+		padding: 1.7em 0;
+
+		.results_number {
+			position: absolute;
+			left: 15px;
+			top: 1em;
+			font-size: 1.4em;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+		}
+	}
+
+	&__body {
+		img {
+			width: 100%;
+		}
+
+		.slide_content {
+			margin: 1em 0;
+		    font-size: 1.4em;
+		    text-align: center;
+		    line-height: 1.6;
+		}
+
+
+		.slide_category,.product_type {
+			text-transform: uppercase;
+		}
+
+		picture {
+			position: relative;
+			display: block;
+		}
+
+		a {
+			cursor: default;
+		}
+
+		.favorite_button {
+			position: absolute;
+			right: 1em;
+			top: 1em;
+			z-index: 9;
+			color: $favorites_red;
+			font-size: 1.8em;
+			cursor: pointer;
+		}
+	}
+
+	@import "../components/checkboxes";
+}

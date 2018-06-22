@@ -6,6 +6,7 @@
 	<script src="js/isotope.js"></script>
 	<script src="js/nav_menu.js"></script>
 	<script src="js/category.js"></script>
+	<script src="js/favorites.js"></script>
 	<!-- <script src="js/carousel.js"></script> -->
 	<script src="js/slider.js"></script>	
 </body>

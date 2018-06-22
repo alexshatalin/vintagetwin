@@ -54,6 +54,7 @@
 			$(this).closest('dl').toggleClass('inactive');
 		});
 
+		// Secondary menu set up
 		$('body').on('click touchstart', '.main_header__secondary_nav,.main_header__secondary_nav_body,.account_section', function(e){
 			e.stopPropagation();
 			let currentElem = $(e.target).attr('data-id'),
@@ -63,7 +64,7 @@
 				$('.main_header__secondary_nav_body').addClass('opened');
 				$('.main_header__secondary_nav li,.main_header__secondary_nav .featured_section').not($('[data-id="' + currentElem + '"]')).removeClass('active');
 				$('[data-id="'+ currentElem +'"]').toggleClass('active');
-				$('.main_header__secondary_nav_body input,.main_header__secondary_nav_body input[type="email"]').focus();
+				$('.main_header__secondary_nav_body input[type="email"],.main_header__secondary_nav_body input[type="text"]').focus();
 				
 			}
 
@@ -111,22 +112,6 @@
 		$('.page_container').removeClass('mobile_menu_opened');
 		$('.mobile_nav').removeClass('sign_in_opened');
 		vtObj.menuOpen = false;
-	};
-
-	vtObj.createSignin = function(){
-		//$('.mobile_nav').addClass('sign_in_opened');
-		// $('[data-id="form_title_top"]').text('sign in');
-		// $('[data-id="forgot_password"]').removeClass('invisible');
-		// $('[data-text-left="form_title_left"]').text('create account');
-		// $('[data-text-right="form_title_right"]').addClass('hide');
-	};
-
-	vtObj.createAccount = function(){
-		//$('.mobile_nav').addClass('sign_in_opened');
-		// $('[data-id="form_title_top"]').text('create an account');
-		// $('[data-id="forgot_password"]').addClass('invisible');
-		// $('[data-text-left="form_title_left"]').text('already have an account?');
-		// $('[data-text-right="form_title_right"]').removeClass('hide');
 	};
 
 	vtObj.removeAccountMenu = function() {

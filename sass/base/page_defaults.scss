@@ -67,3 +67,8 @@
 	}
 }
 
+$page_top_offset: 14em;
+
+.secondary_page_container {
+	padding-top: $page_top_offset;
+}

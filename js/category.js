@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	let $checkBoxes = $('.category input'),
+	let $checkBoxes = $('input[type="checkbox"]'),
 		$grid = $('.grid').isotope({
 		  itemSelector: '.grid_item',
 		  sortBy: 'random',
