@@ -48,7 +48,7 @@
 			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
 				<div class="row grid">
 					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_black">
-						<a href="#">
+						<a href="/product.php">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 							</picture>
@@ -60,7 +60,7 @@
 						</a>
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_blue original_prints">
-						<a href="#"> 
+						<a href="/product.php"> 
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 							</picture>
@@ -72,7 +72,7 @@
 						</a>
 					</div>
 					<div class="col-xs-6 col-sm-4  col-md-3 col-lg-3 grid_item color_black brands_logos original_prints">
-						<a href="#">
+						<a href="/product.php">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 							</picture>
@@ -84,7 +84,7 @@
 						</a>
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_orange brands_logos colleges">
-						<a href="#">
+						<a href="/product.php">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 							</picture>
@@ -97,7 +97,7 @@
 					</div>
 
 					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_green colleges">
-						<a href="#">
+						<a href="/product.php">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 							</picture>
@@ -109,7 +109,7 @@
 						</a>
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_blue stripes_patterns">
-						<a href="#">
+						<a href="/product.php">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 							</picture>
@@ -121,7 +121,7 @@
 						</a>
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_white">
-						<a href="#">
+						<a href="/product.php">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 							</picture>
@@ -133,7 +133,7 @@
 						</a>
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_blue">
-						<a href="#">
+						<a href="/product.php">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 							</picture>
@@ -146,7 +146,7 @@
 					</div>
 
 					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_black">
-						<a href="#">
+						<a href="/product.php">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 							</picture>
@@ -158,7 +158,7 @@
 						</a>
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_orange">
-						<a href="#">
+						<a href="/product.php">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 							</picture>
@@ -170,7 +170,7 @@
 						</a>
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_white">
-						<a href="#">
+						<a href="/product.php">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 							</picture>
@@ -182,7 +182,7 @@
 						</a>
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_black">
-						<a href="#">
+						<a href="/product.php">
 							<picture>
 							  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 							</picture>

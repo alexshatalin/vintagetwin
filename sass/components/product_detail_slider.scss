@@ -1,0 +1,58 @@
+.slider.product {
+	float: left;
+
+	ul {
+		margin: 0 1.8em 0 9em;
+		padding: 0;
+		list-style-type: none;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	li {
+		position: relative;
+		margin: 0 0 2.1em;
+		display: block;
+		cursor: pointer;
+
+		&.selected,&:hover {
+			&:before {
+				display: block;
+			}
+		}
+
+		&:before {
+			content: '';
+			display: none;
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 8;
+			border: 2px solid black;
+			height: 100%;
+			width: 100%;
+		}
+
+	}
+
+	.slider_content {
+		display: inline-block;
+		vertical-align: top;
+		padding: 38.4em 26.4em;
+	}
+
+	.next_button,.prev_button {
+		top: 50%;
+		padding: 1.3em;
+	}
+
+	.next_button {
+		right: 3.9em;
+		@include transform(translateY(-50%) rotate(-135deg));
+	}
+
+	.prev_button {
+		left: 3.9em;
+		@include transform(translateY(-50%) rotate(45deg));
+	}
+}

@@ -19,6 +19,7 @@ Version: 1.00
 @import "base/dev";
 @import "base/container_settings";
 
+@import "components/buttons";
 @import "components/mobile_nav";
 @import "components/slider_global";
 @import "components/hero_slider";
@@ -27,14 +28,7 @@ Version: 1.00
 @import "components/instagram_slider";
 @import "components/cart_favorites_slider";
 @import "components/favorites";
-
-
-//@import "components/moible_menu";
-//@import "components/page_settings_global";
-//@import "components/search_container";
-//@import "components/mega_menu";
-
-
+@import "components/product_detail_slider";
 
 @import "layout/header";
 @import "layout/page_settings";
@@ -43,6 +37,7 @@ Version: 1.00
 
 @import "pages/cart";
 @import "pages/category";
+@import "pages/product";
 
 
 

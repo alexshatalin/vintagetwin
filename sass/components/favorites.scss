@@ -66,16 +66,6 @@
 		a {
 			cursor: default;
 		}
-
-		.favorite_button {
-			position: absolute;
-			right: 1em;
-			top: 1em;
-			z-index: 9;
-			color: $favorites_red;
-			font-size: 1.8em;
-			cursor: pointer;
-		}
 	}
 
 	@import "../components/checkboxes";

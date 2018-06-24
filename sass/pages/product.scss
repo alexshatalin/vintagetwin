@@ -1,0 +1,167 @@
+.product_detail {
+
+	&__content {
+		margin: 4em 0 0;
+
+		&:after {
+			@extend %fix_clear_container;
+		}
+	}
+
+	&__description {
+		margin: 6.2em 0 0;
+		float: right;
+		width: 38.2%;
+
+		.main_info {
+			padding: 0 7em 0 0;
+			&:after {
+				@extend %fix_clear_container;
+			}
+		}
+
+		.product_title {
+			float: left;
+			font-size: 2.8em;
+			font-family: 'Helvetica', 'Arial', sans-serif;
+			font-weight: 700;
+			letter-spacing: 0.14em;
+		}
+
+		.price {
+			float: right;
+			font-size: 2.8em;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+
+		.description_top {
+			margin: 0 0 3.8em;
+			ul {
+				margin: 2.8em 0;
+			}
+
+			span {
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			.info {
+				position: relative;
+				margin: 0 0.5em 0 0em;
+				padding: 0.7em;
+				border: 1px solid black;
+				border-radius: 50%;
+				color: black;
+				font-size: 0.8em;
+				letter-spacing: 0em;
+				cursor: pointer;
+
+				&:before {
+					content: '?';
+					display: block;
+					position: absolute;
+					@extend %centered_align;
+
+				}
+			}
+
+			.size_info {
+				li {
+					margin: 0em;
+					font-size: 1.8em;
+					display: block;
+					letter-spacing: 0.1em;
+					line-height: 1.4;
+				}
+			}
+		}
+
+		.product_action_buttons {
+			margin: 3.9em -1em 0;
+
+			li {
+				margin: 0 0.5em;
+				width: 45%;
+				display: inline-block;
+
+				&.highlight {
+					font-size: 2.5em;
+				}
+			}
+		}	
+
+		.description_bottom {
+			margin-bottom: 12.8em;
+
+			li {
+				margin: 0 0 0.4em;
+				font-size: 1.1rem;
+				font-weight: 300;
+				letter-spacing: 0.1em;
+
+				&:before {
+					margin: 0 0.3em;
+					display: inline-block;
+					vertical-align: middle;
+					content: '-';
+				}
+			}
+		}
+
+		.single_accordion_section {
+
+			ul {
+				margin: 3.1em;
+
+				li>ul {
+					margin: 0.4em 2.4em;
+				}
+
+				li>ul>li {
+					&:before {
+						display: none;
+					}
+				}
+			}
+
+			&.inactive {
+				.accordion_body_section {
+					display: none;
+				}
+
+				.accordion_title:after {
+					content: '+';
+				}
+			}
+			
+			
+
+		}
+
+		.accordion_title {
+			margin-right: 3.5em;
+			font-size: 1.8em;
+			font-weight: 500;
+			letter-spacing: 0.1em;
+			cursor: pointer;
+
+			&:after {
+				position: absolute;
+				right: 0;
+				@extend %vertical_align_middle;
+				content: '-';
+				font-weight: 700;
+				display: block;
+			}
+		}
+	}
+}
+
+.recently_viewed_products {
+	margin: 0 0 4em;
+}

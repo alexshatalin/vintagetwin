@@ -16,7 +16,7 @@
 						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_black">
 							<a href="#">
 								<picture>
-									<div class="favorite_button"><i class="fas fa-heart"></i></div>
+									<div class="favorite_button"><i class="far fa-heart"></i></div>
 								  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 								</picture>
 								<div class="slide_content">
@@ -29,7 +29,7 @@
 						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_blue original_prints">
 							<a href="#"> 
 								<picture>
-									<div class="favorite_button"><i class="fas fa-heart"></i></div>
+									<div class="favorite_button"><i class="far fa-heart"></i></div>
 								  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 								</picture>
 								<div class="slide_content">
@@ -42,7 +42,7 @@
 						<div class="col-xs-6 col-sm-4  col-md-3 col-lg-3 grid_item color_black brands_logos original_prints">
 							<a href="#">
 								<picture>
-									<div class="favorite_button"><i class="fas fa-heart"></i></div>
+									<div class="favorite_button"><i class="far fa-heart"></i></div>
 								  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 								</picture>
 								<div class="slide_content">
@@ -55,7 +55,7 @@
 						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_orange brands_logos colleges">
 							<a href="#">
 								<picture>
-									<div class="favorite_button"><i class="fas fa-heart"></i></div>
+									<div class="favorite_button"><i class="far fa-heart"></i></div>
 								  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 								</picture>
 								<div class="slide_content">
@@ -69,7 +69,7 @@
 						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_green colleges">
 							<a href="#">
 								<picture>
-									<div class="favorite_button"><i class="fas fa-heart"></i></div>
+									<div class="favorite_button"><i class="far fa-heart"></i></div>
 								  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 								</picture>
 								<div class="slide_content">
@@ -82,7 +82,7 @@
 						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_blue stripes_patterns">
 							<a href="#">
 								<picture>
-									<div class="favorite_button"><i class="fas fa-heart"></i></div>
+									<div class="favorite_button"><i class="far fa-heart"></i></div>
 								  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 								</picture>
 								<div class="slide_content">
@@ -95,7 +95,7 @@
 						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_white">
 							<a href="#">
 								<picture>
-									<div class="favorite_button"><i class="fas fa-heart"></i></div>
+									<div class="favorite_button"><i class="far fa-heart"></i></div>
 								  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 								</picture>
 								<div class="slide_content">
@@ -108,7 +108,7 @@
 						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_blue">
 							<a href="#">
 								<picture>
-									<div class="favorite_button"><i class="fas fa-heart"></i></div>
+									<div class="favorite_button"><i class="far fa-heart"></i></div>
 								  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 								</picture>
 								<div class="slide_content">
@@ -122,7 +122,7 @@
 						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_black">
 							<a href="#">
 								<picture>
-									<div class="favorite_button"><i class="fas fa-heart"></i></div>
+									<div class="favorite_button"><i class="far fa-heart"></i></div>
 								  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 								</picture>
 								<div class="slide_content">
@@ -135,7 +135,7 @@
 						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_orange">
 							<a href="#">
 								<picture>
-									<div class="favorite_button"><i class="fas fa-heart"></i></div>
+									<div class="favorite_button"><i class="far fa-heart"></i></div>
 								  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 								</picture>
 								<div class="slide_content">
@@ -148,7 +148,7 @@
 						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_white">
 							<a href="#">
 								<picture>
-									<div class="favorite_button"><i class="fas fa-heart"></i></div>
+									<div class="favorite_button"><i class="far fa-heart"></i></div>
 								  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 								</picture>
 								<div class="slide_content">
@@ -161,7 +161,7 @@
 						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 grid_item color_black">
 							<a href="#">
 								<picture>
-									<div class="favorite_button"><i class="fas fa-heart"></i></div>
+									<div class="favorite_button"><i class="far fa-heart"></i></div>
 								  	<img src="images/na_slide1.jpg" alt="Featured Product" />
 								</picture>
 								<div class="slide_content">

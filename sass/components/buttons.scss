@@ -1,0 +1,36 @@
+.favorite_button {
+	position: absolute;
+	right: 1em;
+	top: 1em;
+	z-index: 9;
+	color: $favorites_red;
+	font-size: 2.4em;
+	cursor: pointer;
+}
+
+%featured_button {
+	padding: 0.6em 1.2em;
+	border: 1px solid $category_highlight_color;
+	font-size: 2em;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.1em;
+	cursor: pointer;
+
+	&:hover,&.selected {
+		border: 1px solid black;
+		background: black;
+		color: white;
+	}
+}
+
+.product_action_buttons {
+	margin: 1em 0;
+
+	li {
+		display: inline-block;
+		vertical-align: middle;
+		@extend %featured_button;
+	}
+}	

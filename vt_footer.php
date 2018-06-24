@@ -8,6 +8,7 @@
 	<script src="js/category.js"></script>
 	<script src="js/favorites.js"></script>
 	<!-- <script src="js/carousel.js"></script> -->
-	<script src="js/slider.js"></script>	
+	<script src="js/slider.js"></script>
+	<script src="js/accordion.js"></script>	
 </body>
 </html>

@@ -9,6 +9,7 @@
 			fadeIn: false,
 			main_pagination: false,
 			secondary_pagination: false,
+			thumbs_pagination: false,
 			button_hide: false,
 			dur_time: 500
 		};
@@ -30,6 +31,23 @@
 				mask.before('<div class="prev_button"></div><div class="next_button"></div>');
 			}	
 
+			if( true == opts.thumbs_pagination) {
+				thumbs_container = container.children('.thumbs');
+				single_thumb = thumbs_container.children('li');
+				$(single_thumb).on('click touchstart mouseenter', function(e) {
+					let prev_index = $('.thumbs li.selected').index();
+					slide_index = $(this).index();
+
+					$('.thumbs li').removeClass('selected');
+					$(this).addClass('selected');	
+					if( prev_index < slide_index ) {
+						move_slides(1, -1, prev_index, slide_index);
+					} else {
+						move_slides(-1, 1, prev_index, slide_index);
+					}
+				});
+			}
+
 			if( true == opts.slider ) {
 				slide_margin = Math.abs(parseInt(main_parent.css('margin-left')));
 				slide_width = slides.width();
@@ -44,21 +62,23 @@
 				});
 			}	
 
-			container.on("click", ".next_button", function () {
+			container.on("click", ".next_button", function (e) {
 				if (container.animating) {
 					return false;
 				}
 				container.animating = true;
 				show_slides(1);
+				e.stopPropagation();
 			});
 
-			container.on("click", ".prev_button", function () {
+			container.on("click", ".prev_button", function (e) {
 				if (container.animating) {
 					return false;
 				}
 				container.animating = true;
 
 				show_slides(-1);
+				e.stopPropagation();
 			});
 
 			container.on("mouseleave mouseenter", ".next_button, .prev_button", function () {
@@ -126,6 +146,21 @@
 				} 
 			}
 
+			function move_slides(n, p, prev_index, slide_index) {
+				set_animation(function () {
+					slides.eq(slide_index).css({
+						left: n * 100 + "%"
+					}).queue(function () {
+						$(this).animate({
+							left: "0"
+						}, opts.dur_time).dequeue()
+					});
+					slides.eq(prev_index).animate({
+						left: p * 100 + "%"
+					}, opts.dur_time);
+				});
+			};
+
 			function set_animation(callback) {
 				timer = setTimeout(function () {
 					container.animating = false;
@@ -151,6 +186,20 @@ $(document).ready(function(){
 		dur_time: 200
 	});
 
+	$('.slider.suggested_products_slider').vtSlider({
+		main_pagination: true,
+		slider: true,
+		itemes_displayed: 6,
+		dur_time: 200
+	});
+
+	$('.slider.products_recently_viewed_slider').vtSlider({
+		main_pagination: true,
+		slider: true,
+		itemes_displayed: 6,
+		dur_time: 200
+	});
+
 	$('.slider.instagram_slider').vtSlider({
 		main_pagination: true,
 		slider: true,
@@ -170,6 +219,12 @@ $(document).ready(function(){
 		slider: true,
 		itemes_displayed: 1,
 		dur_time: 500
+	});
+
+	$('.slider.product').vtSlider({
+		main_pagination: true,
+		thumbs_pagination: true,
+		dur_time: 200
 	});
 
 	
