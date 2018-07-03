@@ -57,7 +57,7 @@
 				};
 
 				mask.css({
-					'width': (slide_width + (slide_margin * 2)) * num_of_slides,
+					'width': (slide_width + (slide_margin * 2) + 2) * num_of_slides,
 					//'margin-left': -mask_offset 
 				});
 			}	
