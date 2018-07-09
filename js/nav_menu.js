@@ -43,7 +43,7 @@
 			if( vtObj.currentElem != undefined && vtObj.currentLevel == 2 ) {
 				$('.mobile_nav').addClass('sign_in_opened');
 				$('.account_panel').removeClass('active');
-				$('[data-id="'+ vtObj.currentElem +'"]').addClass('active');
+				$('[data-id="'+ vtObj.currentElem +'"],[data-login-role="'+ vtObj.currentElem +'"]').addClass('active');
 			}
 
 			if( vtObj.currentElem != undefined && vtObj.currentLevel == -2 ) {
@@ -55,24 +55,24 @@
 		});
 
 		// Secondary menu set up
-		$('body').on('click touchstart', '.main_header__secondary_nav,.main_header__secondary_nav_body,.account_section', function(e){
+		$('body').on('click touchstart', '.main_header__secondary_nav', function(e){
 			e.stopPropagation();
 			let currentElem = $(e.target).attr('data-id'),
 				currentDataRole = $(e.target).attr('data-role');	
 
-			if( typeof currentElem != 'undefined' && currentDataRole != 'secondary' ) {
-				$('.main_header__secondary_nav_body').addClass('opened');
-				$('.main_header__secondary_nav li,.main_header__secondary_nav .featured_section').not($('[data-id="' + currentElem + '"]')).removeClass('active');
-				$('[data-id="'+ currentElem +'"]').toggleClass('active');
-				$('.main_header__secondary_nav_body input[type="email"],.main_header__secondary_nav_body input[type="text"]').focus();
-				
-			}
+				if( typeof currentElem != 'undefined' && currentDataRole != 'single_nav_panel' ) {
+					$('.main_header__secondary_nav_body').addClass('opened');
+					$('.main_header__secondary_nav li,.main_header__secondary_nav .featured_section').not($('[data-id="' + currentElem + '"]')).removeClass('active');
+					$('.main_header__secondary_nav .featured_section[data-id="'+ currentElem +'"]').toggleClass('active');
+					$('.main_header__secondary_nav_body input[type="email"],.main_header__secondary_nav_body input[type="text"]').focus();
+				}
 
-			if( typeof currentElem != 'undefined' && currentDataRole == 'secondary' ) {
+		}).on('click touchstart', '.account_section,.main_header__secondary_nav .featured_section', function(e){
+			vtObj.currentTitle = $(e.target).attr('data-login-role');
+			if( typeof vtObj.currentTitle != 'undefined' ) {
 				$('.account_panel').removeClass('active');
-				$('.account_panel[data-id="'+ currentElem +'"]').addClass('active');
+				$('[data-login-role="'+ vtObj.currentTitle +'"]').toggleClass('active');
 			}
-
 		}).on('click touchstart', function(){
 			if( false == vtObj.menuOpen ) {
 				vtObj.removeSecondaryNav();
@@ -92,7 +92,10 @@
 
 		if( true == vtObj.menuOpen && $(window).width() != vtObj.windowWidth ) {
 			vtObj.windowWidth = $(window).width();
-			vtObj.closeMobileNav();
+			vtObj.removeSecondaryNav();
+		} else if( $(window).width() != vtObj.windowWidth && vtObj.resizeState != 2 ) {
+			vtObj.removeSecondaryNav();
+			vtObj.resizeState = 2;
 		}
 
 	}).on('scroll', function(){
@@ -118,12 +121,12 @@
 		window.clearTimeout(vtObj.mobileFormTimer);
 		$('.mobile_nav').removeClass('sign_in_opened');
 		vtObj.mobileFormTimer = window.setTimeout(function(){
-			//vtObj.createSignin();
 		}, 200);
 	};
 
 	vtObj.removeSecondaryNav = function(e) {
 		$('.main_header__secondary_nav_body').removeClass('opened');
+		$('[data-login-role="sign_in"]').addClass('active');
 		$('.main_header__secondary_nav li,.main_header__secondary_nav .featured_section').removeClass('active');
 		
 	};

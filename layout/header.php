@@ -75,7 +75,7 @@
 					<li data-id="cart_content" class="cart"><i class="fas fa-shopping-bag"></i></li>
 				</ul>
 				<div class="main_header__secondary_nav_body">
-					<div data-id="search_content" class="featured_section">
+					<div data-id="search_content" data-role="single_nav_panel" class="featured_section">
 						<label>
 							<span class="black">search</span>
 							<div class="search_section">
@@ -87,11 +87,11 @@
 						</label>
 					</div>
 
-					<div data-id="sign_in_account" class="featured_section">
+					<div data-id="sign_in_account" data-role="single_nav_panel" class="featured_section">
 						<? require(__DIR__ . '/../components/account_fields.php'); ?>
 					</div>
 
-					<div data-id="cart_content" class="featured_section">
+					<div data-id="cart_content" data-role="single_nav_panel" class="featured_section">
 						<div class="title black top">ITEMS ADDED TO BAG</div>
 						<div class="cart_items">
 							<div class="cell">

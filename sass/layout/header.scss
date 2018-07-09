@@ -263,6 +263,7 @@ $desktop_promobar_height: rem(40);
 				font-weight: 700;
 				text-transform: uppercase;
 				letter-spacing: 0.13em;
+				display: inline-block;
 
 				&.top {
 					margin: 0 0 2.5em;
